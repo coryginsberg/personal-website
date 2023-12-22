@@ -53,6 +53,10 @@ module.exports = {
               foreground: '#FFFFFF',
               DEFAULT: '#00a0ff',
             },
+            secondary: {
+              foreground: '#212127',
+              DEFAULT: '#212127',
+            },
           },
         },
         dark: {
@@ -61,7 +65,7 @@ module.exports = {
             background: '#212127',
             foreground: '#fdfdfd',
             primary: {
-              foreground: '#11181C',
+              foreground: '#00a0ff',
               DEFAULT: '#00a0ff',
             },
           },

@@ -1,3 +1,5 @@
+'use client';
+
 import RoundedButton from 'components/RoundedButton';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,8 +12,6 @@ export default function Header(): React.ReactElement {
   return (
     <div className={header.root}>
       <div className={header.sectionLinks}>
-        <ThemeSwitcher />
-
         <Link href="https://github.com/coryginsberg" className={header.link}>
           GitHub
         </Link>
@@ -30,10 +30,16 @@ export default function Header(): React.ReactElement {
           height={60}
         />
       </div>
-      <div className={header.buttonGroup}>
+      <div className="flex right-0 absolute gap-4 place-items-center">
         <Link href="mailto:cory.ginsberg1@gmail.com">
-          <RoundedButton>Contact me</RoundedButton>
+          <RoundedButton
+            color="secondary"
+            size="md"
+            className="bg-foreground text-content3">
+            Contact me
+          </RoundedButton>
         </Link>
+        <ThemeSwitcher />
       </div>
     </div>
   );
