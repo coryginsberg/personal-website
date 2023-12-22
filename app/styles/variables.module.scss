@@ -58,34 +58,6 @@ $themes: (
   }
 }
 
-@mixin theme(
-  $property,
-  $color,
-  $additionalPropertiesPositionIsFront: false,
-  $additionalProperties: ''
-) {
-  $light: map.get($themes, $light-theme);
-  $dark: map.get($themes, $dark-theme);
-
-  @include theme-property(
-    $light,
-    $property,
-    $color,
-    $additionalPropertiesPositionIsFront,
-    $additionalProperties
-  );
-
-  @media (prefers-color-scheme: dark) {
-    @include theme-property(
-      $dark,
-      $property,
-      $color,
-      $additionalPropertiesPositionIsFront,
-      $additionalProperties
-    );
-  }
-}
-
 // For use in JS
 :export {
   accentColor: $accent-color;

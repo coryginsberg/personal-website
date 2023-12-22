@@ -56,7 +56,8 @@
       width: fit-content;
       position: absolute;
       color: var.$text-color-light;
-
+      z-index: 1;
+      
       .largeText {
         font-size: 42px;
       }
@@ -71,7 +72,7 @@
       .svg {
         max-height: 750px;
         overflow: visible;
-        z-index: -1;
+        z-index: 0;
         position: relative;
       }
     }

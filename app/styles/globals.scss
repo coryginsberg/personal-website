@@ -23,8 +23,8 @@ body {
 }
 
 body {
-  @include var.theme('color', var.$foreground-color);
-  @include var.theme('background-color', var.$background-color);
+  // @include var.theme('color', var.$foreground-color);
+  // @include var.theme('background-color', var.$background-color);
 
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -50,8 +50,8 @@ button {
   cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+// }

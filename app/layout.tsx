@@ -12,12 +12,14 @@ export const metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body>
         <Providers>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <main className="text-foreground bg-background">
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </Providers>
       </body>
     </html>

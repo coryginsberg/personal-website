@@ -12,6 +12,7 @@ import reactLogo from '@public/react_logo.png';
 import swiftLogo from '@public/swift_logo.svg';
 import tsLogo from '@public/ts_logo.png';
 import {Button} from '@nextui-org/react';
+import RoundedButton from 'components/RoundedButton';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
@@ -64,27 +65,16 @@ export default function HeroLeft(): React.ReactElement {
         I&apos;m a professional software developer with more than 5 years of
         experience.
       </p>
-      <Button
-        color="primary"
-        radius="full"
-        size="lg"
-        variant="shadow"
-        className="bg-gradient-to-tr from-blue-700 to-blue-300 text-gray-50"
+      <RoundedButton
+        backgroundColor={vars.accentColor}
+        color={'primary'}
+        className={'bg-gradient-to-tr from-blue-500 to-blue-400 text-gray-100'}
+        shouldAnimate={true}
         onPress={() => {
           window.open('/Resume.pdf', '_target');
         }}>
         Check out my resume
-      </Button>
-      {/* <RoundedButton
-        backgroundColor={vars.accentColor}
-        color={vars.textColorLight}
-        className={styles.button}
-        shouldAnimate={true}
-        onClick={() => {
-          window.open('/Resume.pdf', '_target');
-        }}>
-        Check out my resume
-      </RoundedButton> */}
+      </RoundedButton>
       {pills}
     </div>
   );

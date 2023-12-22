@@ -4,11 +4,14 @@ import Link from 'next/link';
 import * as React from 'react';
 
 import header from '@styles/header.module.scss';
+import {ThemeSwitcher} from 'components/ThemeSwitcher';
 
 export default function Header(): React.ReactElement {
   return (
     <div className={header.root}>
       <div className={header.sectionLinks}>
+        <ThemeSwitcher />
+
         <Link href="https://github.com/coryginsberg" className={header.link}>
           GitHub
         </Link>
