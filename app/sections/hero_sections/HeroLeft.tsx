@@ -1,6 +1,5 @@
 'use client';
 
-import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
 import Image from 'next/image';
 import * as React from 'react';
@@ -12,6 +11,8 @@ import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
 import swiftLogo from '@public/swift_logo.svg';
 import tsLogo from '@public/ts_logo.png';
+import {Button} from '@nextui-org/react';
+import RoundedButton from 'components/RoundedButton';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
@@ -66,10 +67,10 @@ export default function HeroLeft(): React.ReactElement {
       </p>
       <RoundedButton
         backgroundColor={vars.accentColor}
-        color={vars.textColorLight}
-        className={styles.button}
+        color={'primary'}
+        className={'bg-gradient-to-tr from-blue-500 to-blue-400 text-gray-100'}
         shouldAnimate={true}
-        onClick={() => {
+        onPress={() => {
           window.open('/Resume.pdf', '_target');
         }}>
         Check out my resume
