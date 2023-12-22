@@ -13,10 +13,19 @@ import {Button, ButtonProps} from '@nextui-org/react';
 
 interface Props extends ButtonProps {
   children: string;
+<<<<<<< HEAD
   backgroundColor?: string;
   shouldAnimate?: boolean;
   onPress?: () => void;
 }
+=======
+  color?: ButtonProps['color'];
+  backgroundColor?: string;
+  className?: ButtonProps['className'];
+  shouldAnimate?: boolean;
+  onPress?: () => void;
+};
+>>>>>>> 2f11ef3 (Fixed right hero popout image)
 
 export default function RoundedButton(props: Props): React.ReactElement {
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -90,8 +99,31 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
+<<<<<<< HEAD
       {...props}>
       {props.children}
     </Button>
+=======
+      className={props.className}
+      onPress={props.onPress}>
+      {props.children}
+    </Button>
+    // <button
+    //   ref={buttonRef}
+    //   className={props.className ?? styles.button}
+    //   style={{
+    //     color: props.color,
+    //   }}
+    //   onMouseEnter={() => {
+    //     zoom?.play();
+    //     wiggle?.restart();
+    //   }}
+    //   onMouseLeave={() => {
+    //     zoom?.pause(0);
+    //   }}
+    //   onClick={props.onClick}>
+    //   {props.children}
+    // </button>
+>>>>>>> 2f11ef3 (Fixed right hero popout image)
   );
 }
