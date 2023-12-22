@@ -8,6 +8,8 @@
   justify-content: space-between;
   height: 80px;
   gap: var.$default-padding;
+  z-index: 100;
+  position: relative;
 
   .sectionLinks {
     .link {
