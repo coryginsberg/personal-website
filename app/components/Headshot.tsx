@@ -1,6 +1,6 @@
 /**
- * Copyright © 2023 Cory Ginsberg
- * Released under the MIT License.
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
  */
 
 'use client';
@@ -59,7 +59,8 @@ export default function Headshot(): React.ReactElement {
         fill="none"
       />
       <clipPath id="clip1">
-        <path d="M856.832,211.271l395.448,-395.564l1462.19,-0.677l-1837.75,1838.75l1837.75,-1838.75l-1837.75,1838.75l-0.283,-0.282c-202.328,193.266 -523.421,190.346 -722.16,-8.663c-137.473,-137.657 -181.126,-333.815 -130.991,-508.626l5.882,-817.592l827.664,-107.348Z" />
+        <path // eslint-disable-next-line max-len
+          d="M856.832,211.271l395.448,-395.564l1462.19,-0.677l-1837.75,1838.75l1837.75,-1838.75l-1837.75,1838.75l-0.283,-0.282c-202.328,193.266 -523.421,190.346 -722.16,-8.663c-137.473,-137.657 -181.126,-333.815 -130.991,-508.626l5.882,-817.592l827.664,-107.348Z" />
       </clipPath>
       <g clipPath="url(#clip1)">
         <foreignObject

@@ -1,6 +1,6 @@
 /**
- * Copyright © 2023 Cory Ginsberg
- * Released under the MIT License.
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
  */
 
 import * as React from 'react';
