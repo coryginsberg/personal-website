@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 // Put all global scoped components here. For global scss stuff, use globals.module.scss
 @use './variables.module.scss' as var;
 @use './components/roundedButton.module.scss';

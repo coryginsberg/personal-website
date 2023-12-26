@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 'use client';
 
 import Headshot from 'components/Headshot';

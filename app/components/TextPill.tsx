@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 import * as React from 'react';
 
 import styles from '@styles/components/textPill.module.scss';

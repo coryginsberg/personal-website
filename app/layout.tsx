@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 import * as React from 'react';
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';

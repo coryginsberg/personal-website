@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 import ProjectCard from 'components/ProjectCard';
 import * as React from 'react';
 

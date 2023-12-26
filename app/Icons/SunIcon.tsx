@@ -1,3 +1,9 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
+/* eslint-disable max-len */
 import React from 'react';
 
 interface Props {

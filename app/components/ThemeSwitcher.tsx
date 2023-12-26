@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 'use client';
 
 import {Switch, SwitchProps, cn} from '@nextui-org/react';

@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+ */
+
 'use client';
 
 import TextPill from 'components/TextPill';
@@ -11,7 +16,6 @@ import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
 import swiftLogo from '@public/swift_logo.svg';
 import tsLogo from '@public/ts_logo.png';
-import {Button} from '@nextui-org/react';
 import RoundedButton from 'components/RoundedButton';
 
 export default function HeroLeft(): React.ReactElement {
