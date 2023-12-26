@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use client';
 
 import * as React from 'react';

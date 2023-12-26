@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 import * as React from 'react';
 import HeroLeft from 'sections/HeroLeft';
 import HeroRight from 'sections/HeroRight';

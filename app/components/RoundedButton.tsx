@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use client';
 
 import {gsap} from 'gsap';
@@ -6,14 +11,12 @@ import {useLayoutEffect, useRef, useState} from 'react';
 
 import {Button, ButtonProps} from '@nextui-org/react';
 
-type Props = {
+interface Props extends ButtonProps {
   children: string;
-  color?: ButtonProps['color'];
   backgroundColor?: string;
-  className?: ButtonProps['className'];
   shouldAnimate?: boolean;
   onPress?: () => void;
-};
+}
 
 export default function RoundedButton(props: Props): React.ReactElement {
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -77,10 +80,9 @@ export default function RoundedButton(props: Props): React.ReactElement {
   return (
     <Button
       ref={buttonRef}
-      color={props.color}
       radius="full"
-      size="lg"
-      variant="flat"
+      size={props.size ?? 'lg'}
+      variant={props.variant ?? 'flat'}
       onMouseEnter={() => {
         zoom?.play();
         wiggle?.restart();
@@ -88,25 +90,8 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
-      className={props.className}
-      onPress={props.onPress}>
+      {...props}>
       {props.children}
     </Button>
-    // <button
-    //   ref={buttonRef}
-    //   className={props.className ?? styles.button}
-    //   style={{
-    //     color: props.color,
-    //   }}
-    //   onMouseEnter={() => {
-    //     zoom?.play();
-    //     wiggle?.restart();
-    //   }}
-    //   onMouseLeave={() => {
-    //     zoom?.pause(0);
-    //   }}
-    //   onClick={props.onClick}>
-    //   {props.children}
-    // </button>
   );
 }

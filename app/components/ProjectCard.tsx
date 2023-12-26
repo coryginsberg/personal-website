@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use client';
 
 import gsap, {Power4} from 'gsap';
