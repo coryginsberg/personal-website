@@ -1,6 +1,11 @@
 /**
+<<<<<<< HEAD
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
+=======
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+>>>>>>> 4652f08 (Added copyright header to all files under /app)
  */
 
 'use client';
