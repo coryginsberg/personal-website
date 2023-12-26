@@ -35,7 +35,7 @@ export default function Headshot(): React.ReactElement {
       };
       document.addEventListener('mousemove', temp);
     });
-
+ 
     return () => ctx.revert();
   }, []);
 
