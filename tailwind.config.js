@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 const {nextui} = require('@nextui-org/react');
 
 /** @type {import('tailwindcss').Config} */
@@ -25,7 +30,7 @@ module.exports = {
         },
         fontSize: {
           small: '16px',
-          medium: '24px',
+          medium: '20px',
           large: '42px',
         },
       },
@@ -67,6 +72,10 @@ module.exports = {
             primary: {
               foreground: '#00a0ff',
               DEFAULT: '#00a0ff',
+            },
+            secondary: {
+              foreground: '#fdfdfd',
+              DEFAULT: '#fdfdfd',
             },
           },
         },

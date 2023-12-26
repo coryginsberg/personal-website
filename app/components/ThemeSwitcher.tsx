@@ -6,8 +6,8 @@
 'use client';
 
 import {Switch, SwitchProps, cn} from '@nextui-org/react';
-import {MoonIcon} from 'Icons/MoonIcon';
-import {SunIcon} from 'Icons/SunIcon';
+import {MoonIcon} from 'icons/MoonIcon';
+import {SunIcon} from 'icons/SunIcon';
 import {useTheme} from 'next-themes';
 import {useEffect, useState} from 'react';
 
