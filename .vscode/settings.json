@@ -8,5 +8,12 @@
   "stylelint.snippet": ["css", "scss", "less", "html"],
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "node_modules/@mantine/core/styles.css"
+  ]
 }
