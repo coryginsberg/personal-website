@@ -1,13 +1,23 @@
 /**
+<<<<<<< HEAD
+<<<<<<< HEAD
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
+=======
+ * Copyright © 2023 Cory Ginsberg
+ * Released under the MIT License.
+>>>>>>> 4652f08 (Added copyright header to all files under /app)
+=======
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+>>>>>>> 0697aa5 (Updated file headers)
  */
 
 'use client';
 
 import {Switch, SwitchProps, cn} from '@nextui-org/react';
-import {MoonIcon} from 'Icons/MoonIcon';
-import {SunIcon} from 'Icons/SunIcon';
+import {MoonIcon} from 'icons/MoonIcon';
+import {SunIcon} from 'icons/SunIcon';
 import {useTheme} from 'next-themes';
 import {useEffect, useState} from 'react';
 
