@@ -2925,7 +2925,11 @@ packages:
       tslib: 2.6.2
     dev: false
 
+<<<<<<< HEAD
   /@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.1.1):
+=======
+  /@trivago/prettier-plugin-sort-imports@4.3.0(prettier@2.8.8):
+>>>>>>> e772ecb (Fixed pnpm-lock.yaml)
     resolution: {integrity: sha512-r3n0onD3BTOVUNPhR4lhVK4/pABGpbA7bW3eumZnYdKaHkf1qEC+Mag6DPbGNuuh0eG8AaYj+YqmVHSiGslaTQ==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
