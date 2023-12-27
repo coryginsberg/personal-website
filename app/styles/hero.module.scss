@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
-=======
-/**
- * Copyright © 2023 Cory Ginsberg
- * Released under the MIT License.
->>>>>>> 4652f08 (Added copyright header to all files under /app)
-=======
-/*
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
->>>>>>> 0697aa5 (Updated file headers)
  */
 
 @use './variables.module.scss' as var;
@@ -74,7 +62,7 @@
       position: absolute;
       color: var.$text-color-light;
       z-index: 1;
-      
+
       .largeText {
         font-size: 42px;
       }
@@ -161,7 +149,7 @@
       width: 100%;
       padding: 0 {
         top: 48px;
-      };
+      }
       .header {
         font-size: 48px;
       }
@@ -180,7 +168,7 @@
           bottom: 0;
           top: 32px;
         }
-        
+
         .pillRow {
           display: flex;
           padding-bottom: 16px;
