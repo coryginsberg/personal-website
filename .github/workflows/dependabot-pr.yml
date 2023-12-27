@@ -10,7 +10,7 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
     env:
       PR_URL: ${{ github.event.pull_request.html_url }}
-      GH_TOKEN: ${{ secrets.DEPENDABOT_LANDER_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       BODY: >
         This PR passes all tests. It has been automatically approved and merged 
         into `main` by the Auto-Dependabot action.
