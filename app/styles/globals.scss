@@ -1,15 +1,6 @@
-/*
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 // Put all global scoped components here. For global scss stuff, use globals.module.scss
 @use './variables.module.scss' as var;
 @use './components/roundedButton.module.scss';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -28,8 +19,8 @@ body {
 }
 
 body {
-  // @include var.theme('color', var.$foreground-color);
-  // @include var.theme('background-color', var.$background-color);
+  @include var.theme('color', var.$foreground-color);
+  @include var.theme('background-color', var.$background-color);
 
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -55,8 +46,8 @@ button {
   cursor: pointer;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-// }
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

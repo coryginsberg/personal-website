@@ -1,22 +1,19 @@
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 'use client';
 
 import {gsap} from 'gsap';
 import * as React from 'react';
 import {useLayoutEffect, useRef, useState} from 'react';
 
-import {Button, ButtonProps} from '@nextui-org/react';
+import styles from '@styles/components/roundedButton.module.scss';
 
-interface Props extends ButtonProps {
+type Props = {
   children: string;
+  color?: string;
   backgroundColor?: string;
+  className?: string;
   shouldAnimate?: boolean;
-  onPress?: () => void;
-}
+  onClick?: () => void;
+};
 
 export default function RoundedButton(props: Props): React.ReactElement {
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -78,11 +75,12 @@ export default function RoundedButton(props: Props): React.ReactElement {
   }, [props.shouldAnimate]);
 
   return (
-    <Button
+    <button
       ref={buttonRef}
-      radius="full"
-      size={props.size ?? 'lg'}
-      variant={props.variant ?? 'flat'}
+      className={props.className ?? styles.button}
+      style={{
+        color: props.color,
+      }}
       onMouseEnter={() => {
         zoom?.play();
         wiggle?.restart();
@@ -90,8 +88,8 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
-      {...props}>
+      onClick={props.onClick}>
       {props.children}
-    </Button>
+    </button>
   );
 }

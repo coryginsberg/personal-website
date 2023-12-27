@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 @use './variables.module.scss' as var;
 
 .root {
@@ -21,7 +16,7 @@
 
   @media screen and (max-width: var.$tablet-breakpoint) {
     padding-top: 48px;
-
+    
     .projectsLayout {
       grid-template-columns: repeat(1, 1fr);
     }
