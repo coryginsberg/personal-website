@@ -12,7 +12,7 @@ import {ColorSchemeScript, MantineProvider} from '@mantine/core';
 
 import '@styles/globals.scss';
 import '@mantine/core/styles.css';
-import {theme} from 'theme';
+import { theme } from 'theme';
 
 export const metadata = {
   title: 'Cory Ginsberg',
