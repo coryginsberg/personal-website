@@ -2,7 +2,6 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-
 import {createTheme} from '@mantine/core';
 
 export const theme = createTheme({

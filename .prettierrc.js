@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use strict';
 
 module.exports = {
@@ -6,14 +11,16 @@ module.exports = {
   bracketSpacing: false,
   jsxBracketSameLine: true,
   importOrder: [
-    '^[./]',
+    '^@mantine/(.*)$',
     '<THIRD_PARTY_MODULES>',
-    '^@components/(.*)$',
-    '^@sections/(.*)$',
-    '^@pages/(.*)$',
+    '^[./]',
+    '^components/(.*)$',
+    '^sections/(.*)$',
+    '^pages/(.*)$',
     '^@styles/(.*)$',
-    '^@public/(.*)$',
+    '^public/(.*)$',
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
 };

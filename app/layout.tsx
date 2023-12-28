@@ -2,17 +2,16 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+import {ColorSchemeScript, MantineProvider} from '@mantine/core';
 
+import {SpeedInsights} from '@vercel/speed-insights/next';
 import * as React from 'react';
+import {theme} from 'theme';
+
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';
 
-import {SpeedInsights} from '@vercel/speed-insights/next';
-import {ColorSchemeScript, MantineProvider} from '@mantine/core';
-
 import '@styles/globals.scss';
-import '@mantine/core/styles.css';
-import {theme} from 'theme';
 
 export const metadata = {
   title: 'Cory Ginsberg',
