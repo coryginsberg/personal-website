@@ -20,7 +20,7 @@ export const theme = createTheme({
       '#008ee4',
       '#007ecd',
       '#006eb6',
-    ],
+    ], 
   },
   fontFamily: 'Roboto, sans-serif',
   defaultRadius: 'md',

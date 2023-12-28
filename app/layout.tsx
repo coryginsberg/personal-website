@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 import {ColorSchemeScript, MantineProvider} from '@mantine/core';
 import '@mantine/core/styles.css';
 
@@ -21,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
+    <html lang="en"> 
       <head>
         <ColorSchemeScript />
       </head>

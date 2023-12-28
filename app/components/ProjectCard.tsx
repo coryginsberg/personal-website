@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import gsap, {Power4} from 'gsap';
@@ -11,12 +12,7 @@ import {useLayoutEffect, useRef} from 'react';
 
 import styles from '@styles/components/projectCard.module.scss';
 
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
-type Props = {
+type Props = { 
   title: string;
   src: StaticImageData;
   href: string;

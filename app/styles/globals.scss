@@ -23,7 +23,7 @@ body {
   }
 }
 
-body {
+body { 
   @include var.theme('color', var.$foreground-color);
   @include var.theme('background-color', var.$background-color);
 
