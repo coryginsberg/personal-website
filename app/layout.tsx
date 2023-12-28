@@ -7,6 +7,7 @@ import * as React from 'react';
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';
 
+import {SpeedInsights} from '@vercel/speed-insights/next';
 import {ColorSchemeScript, MantineProvider} from '@mantine/core';
 
 import '@styles/globals.scss';
@@ -30,6 +31,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <main>{children}</main>
           <Footer />
         </MantineProvider>
+        <SpeedInsights />
       </body>
     </html>
   );

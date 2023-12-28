@@ -40,6 +40,9 @@
         "../public/languages/*",
         "../public/project_previews/*",
       ],
+      "react": [ 
+        "./node_modules/@types/react"
+       ]
     }
   },
   "include": [
