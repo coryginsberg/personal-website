@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -25,33 +21,17 @@
     ],
     "baseUrl": "app",
     "paths": {
-      "components/*": [
-        "components/*",
-      ],
-      "sections/*": [
-        "sections/*",
-        "sections/hero_sections/*",
-      ],
-      "@styles/*": [
-        "styles/*",
-      ],
+      "components/*": ["components/*"],
+      "sections/*": ["sections/*", "sections/hero_sections/*"],
+      "@styles/*": ["styles/*"],
       "@public/*": [
         "../public/*",
         "../public/languages/*",
-        "../public/project_previews/*",
+        "../public/project_previews/*"
       ],
-      "react": [ 
-        "./node_modules/@types/react"
-       ]
+      "react": ["./node_modules/@types/react"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
