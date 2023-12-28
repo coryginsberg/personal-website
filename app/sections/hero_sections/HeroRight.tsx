@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import gsap from 'gsap';
@@ -12,15 +13,10 @@ import Headshot from 'components/Headshot';
 
 import styles from '@styles/hero.module.scss';
 
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 export default function HeroRight(): React.ReactElement {
   const blurbRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();
-
+ 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const temp = (e: MouseEvent) => {

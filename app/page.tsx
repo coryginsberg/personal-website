@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 import * as React from 'react';
 
 import Hero from 'sections/Hero';
@@ -15,3 +16,4 @@ export default function Home() {
     </div>
   );
 }
+ 

@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import headshot from '@public/headshot.png';
@@ -13,12 +14,7 @@ import {useLayoutEffect, useRef} from 'react';
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
 
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
-export default function Headshot(): React.ReactElement {
+export default function Headshot(): React.ReactElement { 
   const backgroundRef = useRef<SVGPathElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();

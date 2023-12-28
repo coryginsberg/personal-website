@@ -22,7 +22,7 @@
   &:hover {
     background-color: color.adjust($color: $background-color, $lightness: -15%);
   }
-}
+} 
 
 .button {
   @include button;

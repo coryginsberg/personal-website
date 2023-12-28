@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import {gsap} from 'gsap';
@@ -10,14 +11,9 @@ import {useLayoutEffect, useRef, useState} from 'react';
 
 import styles from '@styles/components/roundedButton.module.scss';
 
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 type Props = {
   children: string;
-  color?: string;
+  color?: string; 
   backgroundColor?: string;
   className?: string;
   shouldAnimate?: boolean;
