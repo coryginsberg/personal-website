@@ -1,0 +1,39 @@
+/*
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
+.root {
+  height: 80px;
+  padding-top: 12px;
+
+  & .inner {
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+  }
+
+  & .link {
+    color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-dark-0));
+    font-size: var(--mantine-font-size-lg);
+    padding-right: 8px;
+
+    @mixin hover {
+      color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-3));
+    }
+  }
+
+  & .logo {
+    margin-top: 16px;
+  }
+
+  & .buttonGroup {
+    justify-self: end;
+    z-index: 1;
+  }
+
+  /* Hamburger menu button on mobile */
+  & .burger {
+    z-index: 1;
+  }
+}

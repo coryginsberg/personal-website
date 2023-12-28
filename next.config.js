@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 /** @type {import('next').NextConfig} */
 const path = require('path');
 
