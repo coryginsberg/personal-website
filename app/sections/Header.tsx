@@ -6,7 +6,8 @@
 
 import {Burger, Container, Drawer, Group, Menu, rem} from '@mantine/core';
 import {useDisclosure} from '@mantine/hooks';
-
+import {FaGithubSquare} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
