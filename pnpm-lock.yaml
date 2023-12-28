@@ -7,6 +7,7 @@ settings:
 dependencies:
   '@mantine/core':
     specifier: ^7.3.2
+    version: 7.3.2(@mantine/hooks@7.3.2)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/hooks':
     specifier: ^7.3.2
     version: 7.3.2(react@18.2.0)
@@ -253,6 +254,7 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: true
 
   /@babel/types@7.23.6:
     resolution: {integrity: sha512-+uarb83brBzPKN38NX1MkB6vb6+mwvR6amUulqAE7ccQw1pEl+bCia9TbdG1lsnFP7lZySvUn37CHyXQdfTwzg==}
@@ -850,8 +852,8 @@ packages:
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
 
-  /@types/react-dom@18.2.4:
-    resolution: {integrity: sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==}
+  /@types/react-dom@18.2.18:
+    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
     dependencies:
       '@types/react': 18.2.46
     dev: true
@@ -2555,22 +2557,22 @@ packages:
     dependencies:
       function-bind: 1.1.2
 
-  /hermes-eslint@0.12.1:
-    resolution: {integrity: sha512-MM13jACBeq6Enhn1mIlbEPBK5UCvc8GLmqaVqt9t676+SIPuqNNUCshgZ/flXKNyzBiFkDPBURnaRJzY27VrUg==}
+  /hermes-eslint@0.18.2:
+    resolution: {integrity: sha512-FWKVoHyHaXRjOfjoTgoc4OTkC+KThYdhLFyggoXIYLMDHF9hkg5yHSih3cyK3hT73te6+aaGHePzwaOai69uoA==}
     dependencies:
       esrecurse: 4.3.0
-      hermes-estree: 0.12.1
-      hermes-parser: 0.12.1
+      hermes-estree: 0.18.2
+      hermes-parser: 0.18.2
     dev: true
 
-  /hermes-estree@0.12.1:
-    resolution: {integrity: sha512-IWnP3rEZnuEq64IGM/sNsp+QCQcCAAu5TMallJ7bpUw0YUfk5q6cA7tvBGo/D0kGyo5jASc4Yp/CQCsLSSMfGQ==}
+  /hermes-estree@0.18.2:
+    resolution: {integrity: sha512-KoLsoWXJ5o81nit1wSyEZnWUGy9cBna9iYMZBR7skKh7okYAYKqQ9/OczwpMHn/cH0hKDyblulGsJ7FknlfVxQ==}
     dev: true
 
-  /hermes-parser@0.12.1:
-    resolution: {integrity: sha512-53aep6osCq1GiSIlbe7ltPD9v0GeAUtGlaMhgKexGjePoI66GnalLR5aPeuIZbExBQAb+af/kiXT3yxBweuXUA==}
+  /hermes-parser@0.18.2:
+    resolution: {integrity: sha512-1eQfvib+VPpgBZ2zYKQhpuOjw1tH+Emuib6QmjkJWJMhyjM8xnXMvA+76o9LhF0zOAJDZgPfQhg43cyXEyl5Ew==}
     dependencies:
-      hermes-estree: 0.12.1
+      hermes-estree: 0.18.2
     dev: true
 
   /html-tags@3.3.1:
@@ -2839,7 +2841,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.10.5
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
