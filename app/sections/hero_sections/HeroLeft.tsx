@@ -4,7 +4,7 @@
  */
 'use client';
 
-import { Text, Title } from '@mantine/core';
+import {Text, Title} from '@mantine/core';
 
 import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
@@ -18,11 +18,6 @@ import TextPill from 'components/TextPill';
 
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
-
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
 
 /**
  * Copyright (c) 2023 Cory Ginsberg
