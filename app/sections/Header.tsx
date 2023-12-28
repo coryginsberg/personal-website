@@ -4,14 +4,14 @@
  */
 'use client';
 
-import { Burger, Container, Drawer, Group, Menu, rem } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import {Burger, Container, Drawer, Group, Menu, rem} from '@mantine/core';
+import {useDisclosure} from '@mantine/hooks';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { FaGithubSquare } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import {FaGithubSquare} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 
 import RoundedButton from 'components/RoundedButton';
 
@@ -26,24 +26,24 @@ const links = [
   {
     label: 'GitHub',
     link: 'https://github.com/coryginsberg',
-    icon: <FaGithubSquare style={{ width: rem(24), height: rem(24) }} />,
+    icon: <FaGithubSquare style={{width: rem(24), height: rem(24)}} />,
   },
   {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/cory-ginsberg/',
-    icon: <FaLinkedin style={{ width: rem(24), height: rem(24) }} />,
+    icon: <FaLinkedin style={{width: rem(24), height: rem(24)}} />,
   },
 ];
 
 export default function Header(): React.ReactElement {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, {toggle}] = useDisclosure(false);
 
-  const items = links.map(link => (
+  const items = links.map((link) => (
     <Link
       key={link.label}
       href={link.link}
       className={header.link}
-      onClick={event => {
+      onClick={(event) => {
         event.preventDefault();
       }}>
       {link.label}
@@ -96,8 +96,8 @@ export default function Header(): React.ReactElement {
           </Group>
           <Menu.Dropdown
             className={header.dropdown}
-            style={{ border: 'none', borderRadius: 0 }}>
-            <Menu.Label style={{ paddingLeft: 20 }}>Links</Menu.Label>
+            style={{border: 'none', borderRadius: 0}}>
+            <Menu.Label style={{paddingLeft: 20}}>Links</Menu.Label>
             {links.map((item, key) => (
               <Menu.Item
                 key={key}
