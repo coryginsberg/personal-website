@@ -6,15 +6,21 @@
 
 import {Burger, Container, Drawer, Group, Menu, rem} from '@mantine/core';
 import {useDisclosure} from '@mantine/hooks';
-import {FaGithubSquare} from 'react-icons/fa';
-import {FaLinkedin} from 'react-icons/fa';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
+import {FaGithubSquare} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 
 import RoundedButton from 'components/RoundedButton';
 
 import header from '@styles/header.module.css';
+
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
 
 const links = [
   {
