@@ -4,7 +4,7 @@
  */
 'use client';
 
-import { Grid, Group, Text, Title } from '@mantine/core';
+import {Grid, Group, Text, Title} from '@mantine/core';
 
 import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
@@ -12,7 +12,7 @@ import swiftLogo from '@public/swift_logo.svg';
 import tsLogo from '@public/ts_logo.png';
 import Image from 'next/image';
 import * as React from 'react';
-import { theme } from 'theme';
+import {theme} from 'theme';
 
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
