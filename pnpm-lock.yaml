@@ -227,23 +227,8 @@ packages:
       '@babel/types': 7.17.0
     dev: true
 
-<<<<<<< Updated upstream
-  /@babel/runtime@7.23.6:
-<<<<<<< HEAD
-    resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
-=======
-    resolution:
-      {
-        integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==,
-      }
-<<<<<<< HEAD
-=======
   /@babel/runtime@7.23.7:
     resolution: {integrity: sha512-w06OXVOFso7LcbzMiDGt+3X7Rh7Ho8MmgPoWU3rarH+8upf+wSU/grlGbWzQyr3DkdN6ZeuMFjpdwW0Q+HxobA==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
@@ -317,23 +302,8 @@ packages:
       '@csstools/css-tokenizer': 2.2.2
     dev: true
 
-<<<<<<< Updated upstream
-  /@csstools/selector-specificity@3.0.1(postcss-selector-parser@6.0.14):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-NPljRHkq4a14YzZ3YD406uaxh7s0g6eAq3L9aLOWywoqe8PkYamAvtsh7KNX6c++ihDrJ0RiU+/z7rGnhlZ5ww==}
-=======
-    resolution:
-      {
-        integrity: sha512-NPljRHkq4a14YzZ3YD406uaxh7s0g6eAq3L9aLOWywoqe8PkYamAvtsh7KNX6c++ihDrJ0RiU+/z7rGnhlZ5ww==,
-      }
-<<<<<<< HEAD
-=======
   /@csstools/selector-specificity@3.0.1(postcss-selector-parser@6.0.15):
     resolution: {integrity: sha512-NPljRHkq4a14YzZ3YD406uaxh7s0g6eAq3L9aLOWywoqe8PkYamAvtsh7KNX6c++ihDrJ0RiU+/z7rGnhlZ5ww==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss-selector-parser: ^6.0.13
@@ -1163,68 +1133,23 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: false
 
-<<<<<<< Updated upstream
-  /acorn-import-assertions@1.9.0(acorn@8.11.2):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
-=======
-    resolution:
-      {
-        integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==,
-      }
-<<<<<<< HEAD
-=======
   /acorn-import-assertions@1.9.0(acorn@8.11.3):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     peerDependencies:
       acorn: ^8
     dependencies:
       acorn: 8.11.3
     dev: false
 
-<<<<<<< Updated upstream
-  /acorn-jsx@5.3.2(acorn@8.11.2):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
-=======
-    resolution:
-      {
-        integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==,
-      }
-<<<<<<< HEAD
-=======
   /acorn-jsx@5.3.2(acorn@8.11.3):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.11.3
 
-<<<<<<< Updated upstream
-  /acorn@8.11.2:
-<<<<<<< HEAD
-    resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
-=======
-    resolution:
-      {
-        integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==,
-      }
-<<<<<<< HEAD
-=======
   /acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -2007,23 +1932,8 @@ packages:
       eslint: 8.56.0
     dev: true
 
-<<<<<<< Updated upstream
-  /eslint-config-standard-with-typescript@43.0.0(@typescript-eslint/eslint-plugin@6.16.0)(eslint-plugin-import@2.29.1)(eslint-plugin-n@16.5.0)(eslint-plugin-promise@6.1.1)(eslint@8.56.0)(typescript@5.3.3):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-AT0qK01M5bmsWiE3UZvaQO5da1y1n6uQckAKqGNe6zPW5IOzgMLXZxw77nnFm+C11nxAZXsCPrbsgJhSrGfX6Q==}
-=======
-    resolution:
-      {
-        integrity: sha512-AT0qK01M5bmsWiE3UZvaQO5da1y1n6uQckAKqGNe6zPW5IOzgMLXZxw77nnFm+C11nxAZXsCPrbsgJhSrGfX6Q==,
-      }
-<<<<<<< HEAD
-=======
   /eslint-config-standard-with-typescript@43.0.0(@typescript-eslint/eslint-plugin@6.16.0)(eslint-plugin-import@2.29.1)(eslint-plugin-n@16.6.0)(eslint-plugin-promise@6.1.1)(eslint@8.56.0)(typescript@5.3.3):
     resolution: {integrity: sha512-AT0qK01M5bmsWiE3UZvaQO5da1y1n6uQckAKqGNe6zPW5IOzgMLXZxw77nnFm+C11nxAZXsCPrbsgJhSrGfX6Q==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.4.0
       eslint: ^8.0.1
@@ -2044,23 +1954,8 @@ packages:
       - supports-color
     dev: true
 
-<<<<<<< Updated upstream
-  /eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@16.5.0)(eslint-plugin-promise@6.1.1)(eslint@8.56.0):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
-=======
-    resolution:
-      {
-        integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==,
-      }
-<<<<<<< HEAD
-=======
   /eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@16.6.0)(eslint-plugin-promise@6.1.1)(eslint@8.56.0):
     resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: ^8.0.1
@@ -2224,23 +2119,8 @@ packages:
       object.fromentries: 2.0.7
     dev: true
 
-<<<<<<< Updated upstream
-  /eslint-plugin-n@16.5.0(eslint@8.56.0):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-Hw02Bj1QrZIlKyj471Tb1jSReTl4ghIMHGuBGiMVmw+s0jOPbI4CBuYpGbZr+tdQ+VAvSK6FDSta3J4ib/SKHQ==}
-=======
-    resolution:
-      {
-        integrity: sha512-Hw02Bj1QrZIlKyj471Tb1jSReTl4ghIMHGuBGiMVmw+s0jOPbI4CBuYpGbZr+tdQ+VAvSK6FDSta3J4ib/SKHQ==,
-      }
-<<<<<<< HEAD
-=======
   /eslint-plugin-n@16.6.0(eslint@8.56.0):
     resolution: {integrity: sha512-Ag3tYFF90lYU8JdHEl9qSSpeLYbVnO+Oj7sgPUarWUacv1mPL3d5h5yG4Bv3tLe71hrcxmgTi7oByYwKXaVatw==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3276,22 +3156,7 @@ packages:
     dev: true
 
   /merge-stream@2.0.0:
-<<<<<<< HEAD
-<<<<<<< HEAD
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> e4fe1bb (Rebase)
-    resolution:
-      {
-        integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==,
-      }
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-    dev: false
-=======
-    resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
->>>>>>> Stashed changes
 
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -3363,23 +3228,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-<<<<<<< Updated upstream
-  /next@14.0.4(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5):
-<<<<<<< HEAD
-    resolution: {integrity: sha512-qbwypnM7327SadwFtxXnQdGiKpkuhaRLE2uq62/nRul9cj9KhQ5LhHmlziTNqUidZotw/Q1I9OjirBROdUJNgA==}
-=======
-    resolution:
-      {
-        integrity: sha512-qbwypnM7327SadwFtxXnQdGiKpkuhaRLE2uq62/nRul9cj9KhQ5LhHmlziTNqUidZotw/Q1I9OjirBROdUJNgA==,
-      }
-<<<<<<< HEAD
-=======
   /next@14.0.4(react-dom@18.2.0)(react@18.2.0)(sass@1.69.6):
     resolution: {integrity: sha512-qbwypnM7327SadwFtxXnQdGiKpkuhaRLE2uq62/nRul9cj9KhQ5LhHmlziTNqUidZotw/Q1I9OjirBROdUJNgA==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -3707,23 +3557,8 @@ packages:
       postcss: 8.4.32
     dev: true
 
-<<<<<<< Updated upstream
-  /postcss-selector-parser@6.0.14:
-<<<<<<< HEAD
-    resolution: {integrity: sha512-65xXYsT40i9GyWzlHQ5ShZoK7JZdySeOozi/tz2EezDo6c04q6+ckYMeoY7idaie1qp2dT5KoYQ2yky6JuoHnA==}
-=======
-    resolution:
-      {
-        integrity: sha512-65xXYsT40i9GyWzlHQ5ShZoK7JZdySeOozi/tz2EezDo6c04q6+ckYMeoY7idaie1qp2dT5KoYQ2yky6JuoHnA==,
-      }
-<<<<<<< HEAD
-=======
   /postcss-selector-parser@6.0.15:
     resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=4'}
     dependencies:
       cssesc: 3.0.0
@@ -4056,23 +3891,8 @@ packages:
       get-intrinsic: 1.2.2
       is-regex: 1.1.4
 
-<<<<<<< Updated upstream
-  /sass@1.69.5:
-<<<<<<< HEAD
-    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
-=======
-    resolution:
-      {
-        integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==,
-      }
-<<<<<<< HEAD
-=======
   /sass@1.69.6:
     resolution: {integrity: sha512-qbRr3k9JGHWXCvZU77SD2OTwUlC+gNT+61JOLcmLm+XqH4h/5D+p4IIsxvpkB89S9AwJOyb5+rWNpIucaFxSFQ==}
->>>>>>> Stashed changes
->>>>>>> 32d204e (Updated Prettier & ESLint stuff)
-=======
->>>>>>> e4fe1bb (Rebase)
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
