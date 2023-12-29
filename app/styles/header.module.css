@@ -7,12 +7,6 @@
   height: 80px;
   padding-top: 12px;
 
-  & .inner {
-    /* display: flex; */
-    /* justify-content: space-between;
-    align-items: center; */
-  }
-
   & .link {
     color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-dark-0));
     font-size: var(--mantine-font-size-lg);
