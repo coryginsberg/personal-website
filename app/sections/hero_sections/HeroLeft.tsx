@@ -4,6 +4,8 @@
  */
 'use client';
 
+import { Text, Title } from '@mantine/core';
+
 import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
 import swiftLogo from '@public/swift_logo.svg';
@@ -22,6 +24,11 @@ import vars from '@styles/variables.module.scss';
  * MIT License
  */
 
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 export default function HeroLeft(): React.ReactElement {
   const pills = (
     <div className={styles.pillSection}>
@@ -31,8 +38,7 @@ export default function HeroLeft(): React.ReactElement {
           textColor={vars.textColorLight}
           imageLeft={
             <Image src={reactLogo} alt="React Logo" width={38} height={30} />
-          }
-        >
+          }>
           React
         </TextPill>
         <TextPill
@@ -40,8 +46,7 @@ export default function HeroLeft(): React.ReactElement {
           textColor={vars.textColorLight}
           imageLeft={
             <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
-          }
-        >
+          }>
           TypeScript
         </TextPill>
       </div>
@@ -51,8 +56,7 @@ export default function HeroLeft(): React.ReactElement {
           textColor={vars.textColorLight}
           imageLeft={
             <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
-          }
-        >
+          }>
           Python
         </TextPill>
         <TextPill
@@ -60,8 +64,7 @@ export default function HeroLeft(): React.ReactElement {
           textColor={vars.textColorDark}
           imageLeft={
             <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
-          }
-        >
+          }>
           Swift
         </TextPill>
       </div>
@@ -70,13 +73,13 @@ export default function HeroLeft(): React.ReactElement {
 
   return (
     <div className={styles.heroLeft}>
-      <div className={styles.header}>
+      <Title className={styles.header}>
         Hi, I&apos;m <br /> <b>Cory Ginsberg</b>.
-      </div>
-      <p className={styles.blurb}>
+      </Title>
+      <Text className={styles.blurb} mt="md" fz="lg">
         I&apos;m a professional software developer with more than 5 years of
         experience.
-      </p>
+      </Text>
       <RoundedButton
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}
@@ -84,8 +87,7 @@ export default function HeroLeft(): React.ReactElement {
         shouldAnimate={true}
         onClick={() => {
           window.open('/Resume.pdf', '_target');
-        }}
-      >
+        }}>
         Check out my resume
       </RoundedButton>
       {pills}
