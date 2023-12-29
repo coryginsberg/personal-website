@@ -1,14 +1,7 @@
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
-'use strict';
-
 module.exports = {
   singleQuote: true,
   trailingComma: 'all',
-  bracketSpacing: false,
+  bracketSpacing: true,
   jsxBracketSameLine: true,
   importOrder: [
     '^@mantine/(.*)$',
@@ -23,4 +16,8 @@ module.exports = {
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   plugins: ['@trivago/prettier-plugin-sort-imports'],
+  printWidth: 80,
+  tabWidth: 2,
+  bracketSameLine: true,
+  arrowParens: 'avoid',
 };
