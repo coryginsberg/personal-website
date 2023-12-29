@@ -24,9 +24,7 @@ $dark-gray: #616161;
 $near-black: #2a2426;
 $text-color-dark: #212121;
 $text-color-light: #fdfdfd;
-$react-background: #2a2c32;
-$ts-background: #235a97;
-$dark-theme: 'dark-theme'; 
+$dark-theme: 'dark-theme';
 $light-theme: 'light-theme';
 $copyright-color: #444;
 $opensource-color: #777;
@@ -99,8 +97,6 @@ $themes: (
   nearBlack: $near-black;
   textColorDark: $text-color-dark;
   textColorLight: $text-color-light;
-  reactBackground: $react-background;
-  tsBackground: $ts-background;
   mobileBreakpoint: $mobile-breakpoint;
   tabletBreakpoint: $tablet-breakpoint;
 }

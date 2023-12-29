@@ -1,5 +1,10 @@
+// @ts-check
+
+/** @type {import("@trivago/prettier-plugin-sort-imports").PrettierConfig} */
+
 module.exports = {
   singleQuote: true,
+  semi: true,
   trailingComma: 'all',
   bracketSpacing: true,
   jsxBracketSameLine: true,

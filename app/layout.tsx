@@ -2,13 +2,12 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-
-import {ColorSchemeScript, MantineProvider} from '@mantine/core';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 
-import {SpeedInsights} from '@vercel/speed-insights/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import * as React from 'react';
-import {theme} from 'theme';
+import { theme } from 'theme';
 
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';
@@ -20,9 +19,13 @@ export const metadata = {
   description: 'My personal portfolio website.',
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en"> 
+    <html lang="en">
       <head>
         <ColorSchemeScript />
       </head>

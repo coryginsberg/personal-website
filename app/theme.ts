@@ -2,11 +2,13 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-import {createTheme} from '@mantine/core';
+import { createTheme, rem } from '@mantine/core';
 
 export const theme = createTheme({
   black: '#2a2426',
   white: '#fdfdfd',
+  primaryColor: 'blue',
+  primaryShade: 6,
   colors: {
     // or replace default theme color
     blue: [
@@ -20,9 +22,15 @@ export const theme = createTheme({
       '#008ee4',
       '#007ecd',
       '#006eb6',
-    ], 
+    ],
   },
   fontFamily: 'Roboto, sans-serif',
+  fontSizes: {
+    sm: rem(15),
+    md: rem(17),
+    lg: rem(20),
+    lx: rem(28),
+  },
   defaultRadius: 'md',
   respectReducedMotion: true,
   shadows: {
