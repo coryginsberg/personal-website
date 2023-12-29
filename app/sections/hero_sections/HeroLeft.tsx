@@ -2,7 +2,6 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-
 'use client';
 
 import {Text, Title} from '@mantine/core';
@@ -16,9 +15,14 @@ import * as React from 'react';
 
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
- 
+
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
+
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
