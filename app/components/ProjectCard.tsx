@@ -2,19 +2,15 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
-import gsap, {Power4} from 'gsap';
-import Image, {StaticImageData} from 'next/image';
+import gsap, { Power4 } from 'gsap';
+import Image, { StaticImageData } from 'next/image';
 import * as React from 'react';
-import {useLayoutEffect, useRef} from 'react';
+import { useLayoutEffect, useRef } from 'react';
 
 import styles from '@styles/components/projectCard.module.scss';
-
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
 
 type Props = {
   title: string;
@@ -67,8 +63,7 @@ export default function ProjectCard(props: Props): React.ReactElement {
       <a
         href={props.href?.toString()}
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <Image
           className={styles.image}
           alt={`Preview Image for ${props.title}`}

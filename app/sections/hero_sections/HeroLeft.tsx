@@ -2,14 +2,11 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
-import {Text, Title} from '@mantine/core';
+import { Text, Title } from '@mantine/core';
 
-import pythonLogo from '@public/python_logo.svg';
-import reactLogo from '@public/react_logo.png';
-import swiftLogo from '@public/swift_logo.svg';
-import tsLogo from '@public/ts_logo.png';
 import Image from 'next/image';
 import * as React from 'react';
 
@@ -19,10 +16,10 @@ import TextPill from 'components/TextPill';
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
 
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
+import pythonLogo from '@public/python_logo.svg';
+import reactLogo from '@public/react_logo.png';
+import swiftLogo from '@public/swift_logo.svg';
+import tsLogo from '@public/ts_logo.png';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
