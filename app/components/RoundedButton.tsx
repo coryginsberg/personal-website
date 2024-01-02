@@ -2,18 +2,14 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
+import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
-import {useLayoutEffect, useRef, useState} from 'react';
 
 import styles from '@styles/components/roundedButton.module.scss';
-
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
 
 type Props = {
   children: string;
@@ -76,7 +72,7 @@ export default function RoundedButton(props: Props): React.ReactElement {
       );
 
       setZoom(
-        gsap.to(buttonRef.current, {scale: 1.1, duration: 0.1, paused: true}),
+        gsap.to(buttonRef.current, { scale: 1.1, duration: 0.1, paused: true }),
       );
     });
 
@@ -97,8 +93,7 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
-      onClick={props.onClick}
-    >
+      onClick={props.onClick}>
       {props.children}
     </button>
   );

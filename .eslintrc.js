@@ -1,8 +1,3 @@
-/**
- * Copyright (c) 2023 Cory Ginsberg
- * MIT License
- */
-
 module.exports = {
   env: {
     browser: true,
@@ -11,10 +6,10 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'next',
+    'next/core-web-vitals',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'prettier'
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 'latest',

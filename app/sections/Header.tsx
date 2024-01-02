@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
@@ -19,8 +20,7 @@ export default function Header(): React.ReactElement {
         </Link>
         <Link
           href="https://www.linkedin.com/in/cory-ginsberg/"
-          className={header.link}
-        >
+          className={header.link}>
           LinkedIn
         </Link>
       </div>

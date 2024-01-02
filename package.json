@@ -26,7 +26,7 @@
     "sharp": "^0.33.1"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@serverless-guru/prettier-plugin-import-order": "^0.4.2",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",

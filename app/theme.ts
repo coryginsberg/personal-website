@@ -2,7 +2,8 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-import {createTheme} from '@mantine/core';
+
+import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
   black: '#2a2426',
