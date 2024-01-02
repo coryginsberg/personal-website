@@ -11,7 +11,7 @@
   "dependencies": {
     "@mantine/core": "^7.3.2",
     "@mantine/hooks": "^7.3.2",
-    "@types/node": "20.3.1",
+    "@types/node": "20.10.6",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "css-loader": "^6.8.1",
