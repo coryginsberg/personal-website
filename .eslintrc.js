@@ -4,12 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'fbjs',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'next',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'prettier'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
