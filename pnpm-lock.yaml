@@ -51,7 +51,7 @@ dependencies:
 devDependencies:
   '@serverless-guru/prettier-plugin-import-order':
     specifier: ^0.4.2
-    version: 0.4.2(prettier@3.1.1)
+    version: 0.4.2(prettier@2.8.8)
   '@types/node':
     specifier: ^20.10.6
     version: 20.10.6
@@ -119,8 +119,8 @@ devDependencies:
     specifier: ^7.0.1
     version: 7.0.1(postcss@8.4.32)
   prettier:
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^2.8.8
+    version: 2.8.8
   stylelint:
     specifier: ^16.1.0
     version: 16.1.0(typescript@5.3.3)
@@ -836,7 +836,7 @@ packages:
     resolution: {integrity: sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==}
     dev: true
 
-  /@serverless-guru/prettier-plugin-import-order@0.4.2(prettier@3.1.1):
+  /@serverless-guru/prettier-plugin-import-order@0.4.2(prettier@2.8.8):
     resolution: {integrity: sha512-vRsSDd5Std8KTmDFWiZqGNuS2UmsZ4QxnepzGuOLwWlTj1OC976NnDjF7QtVCYAwSMj+IWJ93PWB74LHQ0x5MQ==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
@@ -853,7 +853,7 @@ packages:
       javascript-natural-sort: 0.7.1
       lodash.clone: 4.5.0
       lodash.isequal: 4.5.0
-      prettier: 3.1.1
+      prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3553,9 +3553,9 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
-    engines: {node: '>=14'}
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
