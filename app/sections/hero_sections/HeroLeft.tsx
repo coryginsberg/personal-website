@@ -1,9 +1,17 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use client';
+
+import { Text, Title } from '@mantine/core';
+
+import Image from 'next/image';
+import * as React from 'react';
 
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
-import Image from 'next/image';
-import * as React from 'react';
 
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
@@ -57,13 +65,13 @@ export default function HeroLeft(): React.ReactElement {
 
   return (
     <div className={styles.heroLeft}>
-      <div className={styles.header}>
+      <Title className={styles.header}>
         Hi, I&apos;m <br /> <b>Cory Ginsberg</b>.
-      </div>
-      <p className={styles.blurb}>
+      </Title>
+      <Text className={styles.blurb} mt="md" fz="lg">
         I&apos;m a professional software developer with more than 5 years of
         experience.
-      </p>
+      </Text>
       <RoundedButton
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}

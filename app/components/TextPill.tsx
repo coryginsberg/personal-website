@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 import * as React from 'react';
 
 import styles from '@styles/components/textPill.module.scss';
@@ -13,7 +18,10 @@ export default function TextPill(props: Props): React.ReactElement {
   return (
     <div
       className={styles.root}
-      style={{backgroundColor: props.backgroundColor, color: props.textColor}}>
+      style={{
+        backgroundColor: props.backgroundColor,
+        color: props.textColor,
+      }}>
       {props.imageLeft}
       <span className={styles.text}>{props.children}</span>
     </div>

@@ -1,9 +1,14 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 'use client';
 
 import gsap from 'gsap';
 import Image from 'next/image';
 import * as React from 'react';
-import {useLayoutEffect, useRef} from 'react';
+import { useLayoutEffect, useRef } from 'react';
 
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';

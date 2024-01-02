@@ -1,19 +1,25 @@
-'use strict';
-
 module.exports = {
+  semi: true,
   singleQuote: true,
   trailingComma: 'all',
-  bracketSpacing: false,
+  bracketSpacing: true,
   jsxBracketSameLine: true,
   importOrder: [
-    '^[./]',
+    '^@mantine/(.*)$',
     '<THIRD_PARTY_MODULES>',
-    '^@components/(.*)$',
-    '^@sections/(.*)$',
-    '^@pages/(.*)$',
+    '^[./]',
+    '^components/(.*)$',
+    '^sections/(.*)$',
+    '^pages/(.*)$',
     '^@styles/(.*)$',
     '^@public/(.*)$',
   ],
   importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
+  importOrderSortIndividualImports: true,
+  importOrderTypeImportsToTop: true,
+  plugins: ['@serverless-guru/prettier-plugin-import-order'],
+  printWidth: 80,
+  tabWidth: 2,
+  bracketSameLine: true,
+  arrowParens: 'avoid',
 };

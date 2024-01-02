@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 @use './variables.module.scss' as var;
 @use './components/roundedButton.module.scss';
 
@@ -143,7 +148,7 @@
       width: 100%;
       padding: 0 {
         top: 48px;
-      };
+      }
       .header {
         font-size: 48px;
       }
@@ -162,7 +167,7 @@
           bottom: 0;
           top: 32px;
         }
-        
+
         .pillRow {
           display: flex;
           padding-bottom: 16px;

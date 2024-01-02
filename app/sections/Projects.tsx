@@ -1,5 +1,11 @@
-import ProjectCard from 'components/ProjectCard';
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
 import * as React from 'react';
+
+import ProjectCard from 'components/ProjectCard';
 
 import styles from '@styles/projects.module.scss';
 
