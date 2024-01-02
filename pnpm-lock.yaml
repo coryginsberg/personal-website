@@ -63,7 +63,7 @@ devDependencies:
     version: 19.0.4(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)
   eslint-config-fbjs:
     specifier: ^4.0.0
-    version: 4.0.0(eslint-plugin-babel@5.3.1)(eslint-plugin-ft-flow@2.0.3)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(hermes-eslint@0.12.1)
+    version: 4.0.0(eslint-plugin-babel@5.3.1)(eslint-plugin-ft-flow@2.0.3)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(hermes-eslint@0.18.2)
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.56.0)
   hermes-eslint:
-    specifier: ^0.12.1
-    version: 0.12.1
+    specifier: ^0.18.2
+    version: 0.18.2
   postcss:
     specifier: ^8.4.32
     version: 8.4.32
@@ -1934,7 +1934,7 @@ packages:
       object.entries: 1.1.7
     dev: true
 
-  /eslint-config-fbjs@4.0.0(eslint-plugin-babel@5.3.1)(eslint-plugin-ft-flow@2.0.3)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(hermes-eslint@0.12.1):
+  /eslint-config-fbjs@4.0.0(eslint-plugin-babel@5.3.1)(eslint-plugin-ft-flow@2.0.3)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(hermes-eslint@0.18.2):
     resolution: {integrity: sha512-GKXvVfpgVgXdxzmYeaqiBJFL58o+T9d5J8EMXYy3AsyD3AtEdsHzwd+4bEqSI2A0RbeF27CAj9+o2v9VhWSLIg==}
     peerDependencies:
       eslint: ^8.0.0
@@ -1949,7 +1949,7 @@ packages:
       eslint-plugin-ft-flow: 2.0.3(@babel/eslint-parser@7.23.3)(eslint@8.56.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
-      hermes-eslint: 0.12.1
+      hermes-eslint: 0.18.2
     dev: true
 
   /eslint-config-next@14.0.4(eslint@8.56.0)(typescript@5.3.3):
@@ -2677,22 +2677,22 @@ packages:
     dependencies:
       function-bind: 1.1.2
 
-  /hermes-eslint@0.12.1:
-    resolution: {integrity: sha512-MM13jACBeq6Enhn1mIlbEPBK5UCvc8GLmqaVqt9t676+SIPuqNNUCshgZ/flXKNyzBiFkDPBURnaRJzY27VrUg==}
+  /hermes-eslint@0.18.2:
+    resolution: {integrity: sha512-FWKVoHyHaXRjOfjoTgoc4OTkC+KThYdhLFyggoXIYLMDHF9hkg5yHSih3cyK3hT73te6+aaGHePzwaOai69uoA==}
     dependencies:
       esrecurse: 4.3.0
-      hermes-estree: 0.12.1
-      hermes-parser: 0.12.1
+      hermes-estree: 0.18.2
+      hermes-parser: 0.18.2
     dev: true
 
-  /hermes-estree@0.12.1:
-    resolution: {integrity: sha512-IWnP3rEZnuEq64IGM/sNsp+QCQcCAAu5TMallJ7bpUw0YUfk5q6cA7tvBGo/D0kGyo5jASc4Yp/CQCsLSSMfGQ==}
+  /hermes-estree@0.18.2:
+    resolution: {integrity: sha512-KoLsoWXJ5o81nit1wSyEZnWUGy9cBna9iYMZBR7skKh7okYAYKqQ9/OczwpMHn/cH0hKDyblulGsJ7FknlfVxQ==}
     dev: true
 
-  /hermes-parser@0.12.1:
-    resolution: {integrity: sha512-53aep6osCq1GiSIlbe7ltPD9v0GeAUtGlaMhgKexGjePoI66GnalLR5aPeuIZbExBQAb+af/kiXT3yxBweuXUA==}
+  /hermes-parser@0.18.2:
+    resolution: {integrity: sha512-1eQfvib+VPpgBZ2zYKQhpuOjw1tH+Emuib6QmjkJWJMhyjM8xnXMvA+76o9LhF0zOAJDZgPfQhg43cyXEyl5Ew==}
     dependencies:
-      hermes-estree: 0.12.1
+      hermes-estree: 0.18.2
     dev: true
 
   /html-tags@3.3.1:

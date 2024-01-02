@@ -41,7 +41,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "hermes-eslint": "^0.12.1",
+    "hermes-eslint": "^0.18.2",
     "postcss": "^8.4.32",
     "postcss-preset-mantine": "^1.12.2",
     "postcss-simple-vars": "^7.0.1",
