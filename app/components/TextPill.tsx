@@ -2,28 +2,27 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+import { Badge, BadgeProps, Grid } from '@mantine/core';
 
 import * as React from 'react';
 
-import styles from '@styles/components/textPill.module.scss';
+import styles from '@styles/components/textPill.module.css';
 
-type Props = {
-  backgroundColor: string;
-  textColor: string;
-  imageLeft: React.ReactNode;
+interface Props extends BadgeProps {
   children: string;
-};
+}
 
 export default function TextPill(props: Props): React.ReactElement {
   return (
-    <div
-      className={styles.root}
-      style={{
-        backgroundColor: props.backgroundColor,
-        color: props.textColor,
-      }}>
-      {props.imageLeft}
-      <span className={styles.text}>{props.children}</span>
-    </div>
+    <Grid.Col span="content">
+      <Badge
+        {...props}
+        size="xl"
+        radius="md"
+        h={60}
+        classNames={{ section: styles.section, label: styles.label }}>
+        {props.children}
+      </Badge>
+    </Grid.Col>
   );
 }

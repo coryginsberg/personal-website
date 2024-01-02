@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import { Burger, Container, Drawer, Group, Menu, rem } from '@mantine/core';

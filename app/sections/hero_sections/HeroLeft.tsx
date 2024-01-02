@@ -2,13 +2,13 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-
 'use client';
 
-import { Text, Title } from '@mantine/core';
+import { Grid, Group, Text, Title } from '@mantine/core';
 
 import Image from 'next/image';
 import * as React from 'react';
+import { theme } from 'theme';
 
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
@@ -23,44 +23,37 @@ import tsLogo from '@public/ts_logo.png';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
-    <div className={styles.pillSection}>
-      <div className={styles.pillRow}>
-        <TextPill
-          backgroundColor={vars.reactBackground}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={reactLogo} alt="React Logo" width={38} height={30} />
-          }>
-          React
-        </TextPill>
-        <TextPill
-          backgroundColor={vars.tsBackground}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
-          }>
-          TypeScript
-        </TextPill>
-      </div>
-      <div className={styles.pillRow}>
-        <TextPill
-          backgroundColor={vars.accentColor}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
-          }>
-          Python
-        </TextPill>
-        <TextPill
-          backgroundColor={vars.gray}
-          textColor={vars.textColorDark}
-          imageLeft={
-            <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
-          }>
-          Swift
-        </TextPill>
-      </div>
-    </div>
+    <Grid className={styles.pillSection} w={'50%'}>
+      <TextPill
+        color="#2a2c32"
+        leftSection={
+          <Image src={reactLogo} alt="React Logo" width={38} height={30} />
+        }>
+        React
+      </TextPill>
+      <TextPill
+        color="#235a97"
+        leftSection={
+          <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
+        }>
+        TypeScript
+      </TextPill>
+      <TextPill
+        color={theme.primaryColor}
+        leftSection={
+          <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
+        }>
+        Python
+      </TextPill>
+      <TextPill
+        color={vars.gray}
+        leftSection={
+          <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
+        }
+        c={theme.black}>
+        Swift
+      </TextPill>
+    </Grid>
   );
 
   return (

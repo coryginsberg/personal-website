@@ -2,9 +2,6 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
-
-'use strict';
-
 import * as React from 'react';
 
 import styles from '@styles/footer.module.scss';
