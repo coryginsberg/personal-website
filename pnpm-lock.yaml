@@ -5,18 +5,24 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@mantine/colors-generator':
+    specifier: ^7.4.0
+    version: 7.4.0(chroma-js@2.4.2)
   '@mantine/core':
-    specifier: ^7.3.2
-    version: 7.3.2(@mantine/hooks@7.3.2)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^7.4.0
+    version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/hooks':
-    specifier: ^7.3.2
-    version: 7.3.2(react@18.2.0)
+    specifier: ^7.4.0
+    version: 7.4.0(react@18.2.0)
   '@typescript-eslint/parser':
     specifier: ^6.17.0
     version: 6.17.0(eslint@8.56.0)(typescript@5.3.3)
   '@vercel/speed-insights':
     specifier: ^1.0.2
     version: 1.0.2
+  chroma-js:
+    specifier: ^2.4.2
+    version: 2.4.2
   css-loader:
     specifier: ^6.8.1
     version: 6.8.1(webpack@5.89.0)
@@ -688,15 +694,23 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@mantine/core@7.3.2(@mantine/hooks@7.3.2)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-CwAuQogVLcLR7O9e1eOgi3gtk4XX6cnaqevAxzJJpIOIyCnHiQ3cEGINVXyUUjUUipBlvK3sqz3NPGJ2ekLFDQ==}
+  /@mantine/colors-generator@7.4.0(chroma-js@2.4.2):
+    resolution: {integrity: sha512-vX6ZVNXl2Q1qVxdMTrKD5/nFIk53WxMxE28tG5dUg93j7wr7RP7N1ETbJS3Mrj9P+Siq67i0MC+YwskjYkfF9A==}
     peerDependencies:
-      '@mantine/hooks': 7.3.2
+      chroma-js: ^2.4.2
+    dependencies:
+      chroma-js: 2.4.2
+    dev: false
+
+  /@mantine/core@7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wnQOz1aSpqVlCpdyY4XyJKRqlW87mexMADQrbCTwg/5BbxKp8XU6sTcnk1piwyR0mM6SI1uo0Yik2qYNGFlyWw==}
+    peerDependencies:
+      '@mantine/hooks': 7.4.0
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
       '@floating-ui/react': 0.24.8(react-dom@18.2.0)(react@18.2.0)
-      '@mantine/hooks': 7.3.2(react@18.2.0)
+      '@mantine/hooks': 7.4.0(react@18.2.0)
       clsx: 2.0.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -708,8 +722,8 @@ packages:
       - '@types/react'
     dev: false
 
-  /@mantine/hooks@7.3.2(react@18.2.0):
-    resolution: {integrity: sha512-xgumuuI3PBWXff5N02HCI7PEy25mDEdyXDQklUYK93J6FKwpcosyZnGVitoUrV1gLtYYa9ZudeAWdhHuh/CpOg==}
+  /@mantine/hooks@7.4.0(react@18.2.0):
+    resolution: {integrity: sha512-Swv23D8XmZqE2hohPBcff+ITwv5l8UlwiiEGMhL+ceUvJLnPzdwlW21qnLBtRtZWyQQ59TAav4M0GFGd93JS8Q==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
@@ -1402,7 +1416,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.617
+      electron-to-chromium: 1.4.618
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
 
@@ -1480,6 +1494,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
+    dev: false
+
+  /chroma-js@2.4.2:
+    resolution: {integrity: sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==}
     dev: false
 
   /chrome-trace-event@1.0.3:
@@ -1712,8 +1730,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.4.617:
-    resolution: {integrity: sha512-sYNE3QxcDS4ANW1k4S/wWYMXjCVcFSOX3Bg8jpuMFaXt/x8JCmp0R1Xe1ZXDX4WXnSRBf+GJ/3eGWicUuQq5cg==}
+  /electron-to-chromium@1.4.618:
+    resolution: {integrity: sha512-mTM2HieHLxs1RbD/R/ZoQLMsGI8lWIkP17G7cx32mJRBJt9wlNPkXwE3sYg/OnNb5GBkus98lXatSthoL8Y5Ag==}
 
   /emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}

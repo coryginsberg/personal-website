@@ -4,7 +4,7 @@
  */
 'use client';
 
-import { Grid, Group, Text, Title } from '@mantine/core';
+import { Grid, Text, Title } from '@mantine/core';
 
 import Image from 'next/image';
 import * as React from 'react';
@@ -13,8 +13,7 @@ import { theme } from 'theme';
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
 
-import styles from '@styles/hero.module.scss';
-import vars from '@styles/variables.module.scss';
+import styles from '@styles/hero.module.css';
 
 import pythonLogo from '@public/python_logo.svg';
 import reactLogo from '@public/react_logo.png';
@@ -46,11 +45,10 @@ export default function HeroLeft(): React.ReactElement {
         Python
       </TextPill>
       <TextPill
-        color={vars.gray}
+        color={theme.colors?.gray && theme.colors?.gray[6]}
         leftSection={
           <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
-        }
-        c={theme.black}>
+        }>
         Swift
       </TextPill>
     </Grid>
@@ -66,10 +64,10 @@ export default function HeroLeft(): React.ReactElement {
         experience.
       </Text>
       <RoundedButton
-        backgroundColor={vars.accentColor}
-        color={vars.textColorLight}
+        color={theme.colors?.blue && theme.colors?.blue[6]}
         className={styles.button}
-        shouldAnimate={true}
+        shouldanimate={true}
+        size="xl"
         onClick={() => {
           window.open('/Resume.pdf', '_target');
         }}>

@@ -2,6 +2,10 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
+'use client';
+
+import { generateColors } from '@mantine/colors-generator';
 import { createTheme, rem } from '@mantine/core';
 
 export const theme = createTheme({
@@ -10,26 +14,14 @@ export const theme = createTheme({
   primaryColor: 'blue',
   primaryShade: 6,
   colors: {
-    // or replace default theme color
-    blue: [
-      '#e1f9ff',
-      '#cbeeff',
-      '#9adaff',
-      '#64c5ff',
-      '#3bb4fe',
-      '#21a9fe',
-      '#09a3ff',
-      '#008ee4',
-      '#007ecd',
-      '#006eb6',
-    ],
+    blue: generateColors('#00a0ff'),
   },
   fontFamily: 'Roboto, sans-serif',
   fontSizes: {
-    sm: rem(15),
-    md: rem(17),
-    lg: rem(20),
-    lx: rem(28),
+    sm: rem(12),
+    md: rem(15),
+    lg: rem(18),
+    lx: rem(25),
   },
   defaultRadius: 'md',
   respectReducedMotion: true,
@@ -37,4 +29,6 @@ export const theme = createTheme({
     md: '1px 1px 3px rgba(0, 0, 0, .25)',
     xl: '5px 5px 3px rgba(0, 0, 0, .25)',
   },
+  autoContrast: true,
+  luminanceThreshold: 0.6,
 });

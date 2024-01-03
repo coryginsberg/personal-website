@@ -43,9 +43,6 @@
       "react": [ 
         "./node_modules/@types/react"
       ],
-      "@mantine/*": [
-        "./node_modules/@mantine"
-      ]
     }
   },
   "include": [

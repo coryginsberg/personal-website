@@ -5,27 +5,27 @@
 
 'use client';
 
+import { Button, ButtonProps } from '@mantine/core';
+
 import { gsap } from 'gsap';
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import styles from '@styles/components/roundedButton.module.scss';
-
-type Props = {
+interface Props extends ButtonProps {
   children: string;
   color?: string;
   backgroundColor?: string;
   className?: string;
-  shouldAnimate?: boolean;
+  shouldanimate?: boolean; // Got error saying to make it lowercase 🤷‍♂️
   onClick?: () => void;
-};
+}
 
 export default function RoundedButton(props: Props): React.ReactElement {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [zoom, setZoom] = useState<gsap.core.Tween | null>();
   const [wiggle, setWiggle] = useState<gsap.core.Timeline | null>();
   useLayoutEffect(() => {
-    if (!props.shouldAnimate || !buttonRef.current) {
+    if (!props.shouldanimate || !buttonRef.current) {
       return () => null;
     }
     const ctx = gsap.context(() => {
@@ -77,15 +77,13 @@ export default function RoundedButton(props: Props): React.ReactElement {
     });
 
     return () => ctx.revert();
-  }, [props.shouldAnimate]);
+  }, [props.shouldanimate]);
 
   return (
-    <button
+    <Button
       ref={buttonRef}
-      className={props.className ?? styles.button}
-      style={{
-        color: props.color,
-      }}
+      radius="xl"
+      variant="filled"
       onMouseEnter={() => {
         zoom?.play();
         wiggle?.restart();
@@ -93,8 +91,9 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
-      onClick={props.onClick}>
+      onClick={props.onClick}
+      {...props}>
       {props.children}
-    </button>
+    </Button>
   );
 }

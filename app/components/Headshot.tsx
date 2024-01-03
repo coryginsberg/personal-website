@@ -10,7 +10,7 @@ import Image from 'next/image';
 import * as React from 'react';
 import { useLayoutEffect, useRef } from 'react';
 
-import styles from '@styles/hero.module.scss';
+import styles from '@styles/hero.module.css';
 import vars from '@styles/variables.module.scss';
 
 import headshot from '@public/headshot.png';
