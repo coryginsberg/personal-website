@@ -5,7 +5,7 @@
 
 'use client';
 
-import { Burger, Container, Drawer, Group, Menu, rem } from '@mantine/core';
+import { Burger, Container, Group, Menu, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Image from 'next/image';
@@ -44,12 +44,6 @@ export default function Header(): React.ReactElement {
       {link.label}
     </Link>
   ));
-
-  const drawer = (
-    <Drawer opened={opened} onClose={toggle}>
-      {items}
-    </Drawer>
-  );
 
   return (
     <header className={header.root}>

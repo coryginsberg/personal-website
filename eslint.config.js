@@ -14,9 +14,9 @@ module.exports = [
     },
     settings: {
       'import/resolver': {
-        typescript: true,
+        // typescript: true,
         node: {
-          paths: ['./'],
+          moduleDirectory: ["node_modules", "app/"],
         },
       },
     },
