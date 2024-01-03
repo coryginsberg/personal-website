@@ -68,6 +68,7 @@ export default function HeroLeft(): React.ReactElement {
         className={styles.button}
         shouldanimate={true}
         size="xl"
+        variant="filled"
         onClick={() => {
           window.open('/Resume.pdf', '_target');
         }}>

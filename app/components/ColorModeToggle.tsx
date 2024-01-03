@@ -9,9 +9,10 @@ import {
   useMantineColorScheme,
 } from '@mantine/core';
 
+import { IconMoon, IconSun } from '@tabler/icons-react';
 import cx from 'clsx';
 import * as React from 'react';
-import { PiMoonBold, PiSunBold } from 'react-icons/pi';
+import { theme } from 'theme';
 
 import styles from '@styles/components/colorModeToggle.module.css';
 
@@ -28,9 +29,11 @@ export default function ColorModeToggle(): React.ReactElement {
       }
       variant="default"
       size="xl"
+      radius="xl"
+      color={theme.white}
       aria-label="Toggle color scheme">
-      <PiSunBold className={cx(styles.icon, styles.light)} />
-      <PiMoonBold className={cx(styles.icon, styles.dark)} />
+      <IconSun className={cx(styles.icon, styles.light)} />
+      <IconMoon className={cx(styles.icon, styles.dark)} />
     </ActionIcon>
   );
 }

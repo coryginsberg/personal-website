@@ -16,6 +16,7 @@ interface Props extends ButtonProps {
   color?: string;
   backgroundColor?: string;
   className?: string;
+  variant?: string;
   shouldanimate?: boolean; // Got error saying to make it lowercase 🤷‍♂️
   onClick?: () => void;
 }
@@ -83,7 +84,7 @@ export default function RoundedButton(props: Props): React.ReactElement {
     <Button
       ref={buttonRef}
       radius="xl"
-      variant="filled"
+      variant={props.variant ?? 'default'}
       onMouseEnter={() => {
         zoom?.play();
         wiggle?.restart();

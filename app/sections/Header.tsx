@@ -5,20 +5,13 @@
 
 'use client';
 
-import {
-  Burger,
-  ButtonGroup,
-  Container,
-  Group,
-  Menu,
-  rem,
-} from '@mantine/core';
+import { Burger, Container, Group, Menu, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { theme } from 'theme';
 
 import ColorModeToggle from 'components/ColorModeToggle';
@@ -30,12 +23,12 @@ const links = [
   {
     label: 'GitHub',
     link: 'https://github.com/coryginsberg',
-    icon: <FaGithubSquare style={{ width: rem(24), height: rem(24) }} />,
+    icon: <IconBrandGithub style={{ width: rem(24), height: rem(24) }} />,
   },
   {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/cory-ginsberg/',
-    icon: <FaLinkedin style={{ width: rem(24), height: rem(24) }} />,
+    icon: <IconBrandLinkedin style={{ width: rem(24), height: rem(24) }} />,
   },
 ];
 
@@ -77,7 +70,7 @@ export default function Header(): React.ReactElement {
               width={60}
               height={60}
             />
-            <ButtonGroup>
+            <Group wrap="nowrap">
               <Link
                 href="mailto:cory.ginsberg1@gmail.com"
                 className={header.buttonGroup}>
@@ -86,7 +79,7 @@ export default function Header(): React.ReactElement {
                 </RoundedButton>
               </Link>
               <ColorModeToggle />
-            </ButtonGroup>
+            </Group>
             <Menu.Target>
               <Burger
                 opened={opened}
