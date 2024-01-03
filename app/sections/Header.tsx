@@ -2,15 +2,17 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
-import { Burger, Container, Drawer, Group, Menu, rem } from '@mantine/core';
+import { Burger, Container, Group, Menu, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { theme } from 'theme';
 
 import RoundedButton from 'components/RoundedButton';
 
@@ -44,12 +46,6 @@ export default function Header(): React.ReactElement {
     </Link>
   ));
 
-  const drawer = (
-    <Drawer opened={opened} onClose={toggle}>
-      {items}
-    </Drawer>
-  );
-
   return (
     <header className={header.root}>
       <Container className={header.inner} fluid={true}>
@@ -76,7 +72,9 @@ export default function Header(): React.ReactElement {
             <Link
               href="mailto:cory.ginsberg1@gmail.com"
               className={header.buttonGroup}>
-              <RoundedButton>Contact me</RoundedButton>
+              <RoundedButton color={theme.black} size="md">
+                Contact me
+              </RoundedButton>
             </Link>
             <Menu.Target>
               <Burger
@@ -100,7 +98,7 @@ export default function Header(): React.ReactElement {
                 href={item.link}
                 target="_blank"
                 style={{
-                  fontSize: 'var(--mantine-font-size-md)',
+                  fontSize: theme.fontSizes?.md,
                   paddingLeft: 20,
                   paddingRight: 20,
                   paddingBottom: 8,

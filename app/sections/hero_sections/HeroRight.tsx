@@ -5,13 +5,16 @@
 
 'use client';
 
+import { Paper, Text } from '@mantine/core';
+
 import gsap from 'gsap';
 import * as React from 'react';
 import { useLayoutEffect, useRef } from 'react';
+import { theme } from 'theme';
 
 import Headshot from 'components/Headshot';
 
-import styles from '@styles/hero.module.scss';
+import styles from '@styles/hero.module.css';
 
 export default function HeroRight(): React.ReactElement {
   const blurbRef = useRef<HTMLImageElement>(null);
@@ -42,10 +45,15 @@ export default function HeroRight(): React.ReactElement {
 
   return (
     <div className={styles.heroRight}>
-      <div className={styles.heroText} ref={blurbRef}>
-        <div className={styles.largeText}>5+</div>
-        <div className={styles.smallText}>years experience</div>
-      </div>
+      <Paper
+        ref={blurbRef}
+        radius="lg"
+        shadow="md"
+        color={theme.colors?.gray && theme.colors.gray[8]}
+        className={styles.heroText}>
+        <Text>5+</Text>
+        <Text>years experience</Text>
+      </Paper>
       <div className={styles.imagePopout}>
         <Headshot />
       </div>

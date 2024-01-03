@@ -45,11 +45,11 @@ export default function ProjectCard(props: Props): React.ReactElement {
       .play();
   };
 
-  const onMouseEnterHandler = (_: React.MouseEvent<HTMLImageElement>) => {
+  const onMouseEnterHandler = () => {
     document.addEventListener('mousemove', mouseMoveEvent);
   };
 
-  const onMouseLeaveHandler = (_: React.MouseEvent<HTMLImageElement>) => {
+  const onMouseLeaveHandler = () => {
     gsap.to(cardRef.current, {
       translateX: 0,
       translateY: 0,

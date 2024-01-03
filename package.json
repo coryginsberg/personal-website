@@ -10,10 +10,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@mantine/core": "^7.3.2",
-    "@mantine/hooks": "^7.3.2",
+    "@mantine/colors-generator": "^7.4.0",
+    "@mantine/core": "^7.4.0",
+    "@mantine/hooks": "^7.4.0",
     "@typescript-eslint/parser": "^6.17.0",
     "@vercel/speed-insights": "^1.0.2",
+    "chroma-js": "^2.4.2",
     "css-loader": "^6.8.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "gsap": "^3.12.4",

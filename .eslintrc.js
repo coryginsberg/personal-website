@@ -4,9 +4,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'next/core-web-vitals',
+    'next',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
@@ -15,14 +16,21 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
-  rules: {},
+  plugins: ['react', 'import'],
+  rules: {
+    // turn on errors for missing imports
+    'import/no-unresolved': 'error',
+  },
   settings: {
     'import/resolver': {
-      typescript: true,
-      node: {
-        paths: ['./'],
+      typescript: {
+        alwaysTryTypes: true,
+        project: 'tsconfig.json',
       },
+      node: true,
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
   },
 };

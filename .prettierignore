@@ -36,7 +36,10 @@ next-env.d.ts
 
 package.json
 eslint.config.js
+tsconfig.json
 next.*
 package-lock.json
 pnpm-lock.yaml
 postcss.config.cjs
+/.github
+/public

@@ -1,3 +1,7 @@
+// @ts-check
+
+/** @type {import("@serverless-guru/prettier-plugin-import-order").PrettierConfig} */
+
 module.exports = {
   semi: true,
   singleQuote: true,
