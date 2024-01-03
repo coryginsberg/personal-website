@@ -5,7 +5,14 @@
 
 'use client';
 
-import { Burger, Container, Group, Menu, rem } from '@mantine/core';
+import {
+  Burger,
+  ButtonGroup,
+  Container,
+  Group,
+  Menu,
+  rem,
+} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Image from 'next/image';
@@ -14,6 +21,7 @@ import * as React from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { theme } from 'theme';
 
+import ColorModeToggle from 'components/ColorModeToggle';
 import RoundedButton from 'components/RoundedButton';
 
 import header from '@styles/header.module.css';
@@ -69,13 +77,16 @@ export default function Header(): React.ReactElement {
               width={60}
               height={60}
             />
-            <Link
-              href="mailto:cory.ginsberg1@gmail.com"
-              className={header.buttonGroup}>
-              <RoundedButton color={theme.black} size="md">
-                Contact me
-              </RoundedButton>
-            </Link>
+            <ButtonGroup>
+              <Link
+                href="mailto:cory.ginsberg1@gmail.com"
+                className={header.buttonGroup}>
+                <RoundedButton color={theme.black} size="md">
+                  Contact me
+                </RoundedButton>
+              </Link>
+              <ColorModeToggle />
+            </ButtonGroup>
             <Menu.Target>
               <Burger
                 opened={opened}

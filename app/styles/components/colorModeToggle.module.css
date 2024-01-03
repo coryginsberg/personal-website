@@ -1,0 +1,27 @@
+/* TODO: Remove once SCSS is removed from project */
+/* stylelint-disable scss/no-duplicate-mixins */
+
+.icon {
+  width: rem(22px);
+  height: rem(22px);
+}
+
+.dark {
+  @mixin dark {
+    display: none;
+  }
+
+  @mixin light {
+    display: block;
+  }
+}
+
+.light {
+  @mixin light {
+    display: none;
+  }
+
+  @mixin dark {
+    display: block;
+  }
+}
