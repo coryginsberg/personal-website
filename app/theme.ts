@@ -15,6 +15,7 @@ export const theme = createTheme({
   primaryShade: 6,
   colors: {
     blue: generateColors('#00a0ff'),
+    body: generateColors('#000000'),
   },
   fontFamily: 'Roboto, sans-serif',
   fontSizes: {
