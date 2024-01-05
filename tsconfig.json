@@ -37,8 +37,11 @@
       ],
       "@public/*": [
         "../public/*",
-        "../public/languages/*",
         "../public/project_previews/*",
+      ],
+      "@svg/*": [
+        "../public/svg/components/*",
+        "../public/svg/components/language/*",
       ],
       "react": [ 
         "./node_modules/@types/react"
@@ -50,7 +53,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "public/svg/components/PersonalLogo.tsx", "cmd/SVGToTypescriptTemplate.js"  ],
   "exclude": [
     "node_modules"
   ]

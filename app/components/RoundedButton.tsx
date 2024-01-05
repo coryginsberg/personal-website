@@ -17,16 +17,18 @@ interface Props extends ButtonProps {
   backgroundColor?: string;
   className?: string;
   variant?: string;
-  shouldanimate?: boolean; // Got error saying to make it lowercase 🤷‍♂️
+  shouldAnimate?: boolean;
   onClick?: () => void;
 }
 
 export default function RoundedButton(props: Props): React.ReactElement {
+  const { shouldAnimate, ...otherProps } = props;
+
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [zoom, setZoom] = useState<gsap.core.Tween | null>();
   const [wiggle, setWiggle] = useState<gsap.core.Timeline | null>();
   useLayoutEffect(() => {
-    if (!props.shouldanimate || !buttonRef.current) {
+    if (!shouldAnimate || !buttonRef.current) {
       return () => null;
     }
     const ctx = gsap.context(() => {
@@ -78,10 +80,11 @@ export default function RoundedButton(props: Props): React.ReactElement {
     });
 
     return () => ctx.revert();
-  }, [props.shouldanimate]);
+  }, [shouldAnimate]);
 
   return (
     <Button
+      {...otherProps}
       ref={buttonRef}
       radius="xl"
       variant={props.variant ?? 'default'}
@@ -92,8 +95,7 @@ export default function RoundedButton(props: Props): React.ReactElement {
       onMouseLeave={() => {
         zoom?.pause(0);
       }}
-      onClick={props.onClick}
-      {...props}>
+      onClick={props.onClick}>
       {props.children}
     </Button>
   );

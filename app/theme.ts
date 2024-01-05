@@ -9,7 +9,7 @@ import { generateColors } from '@mantine/colors-generator';
 import { createTheme, rem } from '@mantine/core';
 
 export const theme = createTheme({
-  black: '#2a2426',
+  // black: '#2a2426',
   white: '#fdfdfd',
   primaryColor: 'blue',
   primaryShade: 6,

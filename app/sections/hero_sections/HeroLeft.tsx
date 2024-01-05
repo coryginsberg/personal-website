@@ -2,6 +2,7 @@
  * Copyright (c) 2023 Cory Ginsberg
  * MIT License
  */
+
 'use client';
 
 import { Grid, Text, Title } from '@mantine/core';
@@ -15,40 +16,26 @@ import TextPill from 'components/TextPill';
 
 import styles from '@styles/hero.module.css';
 
-import pythonLogo from '@public/python_logo.svg';
-import reactLogo from '@public/react_logo.png';
-import swiftLogo from '@public/swift_logo.svg';
-import tsLogo from '@public/ts_logo.png';
+import ReactLogo from '@public/language/React_logo.svg';
+import TypeScriptLogo from '@public/language/Typescript_logo.svg';
+import PythonLogo from '@public/language/python_logo.svg';
+import SwiftLogo from '@public/language/swift_logo.svg';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
     <Grid className={styles.pillSection} w={'50%'}>
-      <TextPill
-        color="#2a2c32"
-        leftSection={
-          <Image src={reactLogo} alt="React Logo" width={38} height={30} />
-        }>
+      <TextPill color="#2a2c32" leftSection={<ReactLogo />}>
         React
       </TextPill>
-      <TextPill
-        color="#235a97"
-        leftSection={
-          <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
-        }>
+      <TextPill color="#235a97" leftSection={<TypeScriptLogo />}>
         TypeScript
       </TextPill>
-      <TextPill
-        color={theme.primaryColor}
-        leftSection={
-          <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
-        }>
+      <TextPill color={theme.primaryColor} leftSection={<PythonLogo />}>
         Python
       </TextPill>
       <TextPill
         color={theme.colors?.gray && theme.colors?.gray[6]}
-        leftSection={
-          <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
-        }>
+        leftSection={<SwiftLogo />}>
         Swift
       </TextPill>
     </Grid>
@@ -66,7 +53,7 @@ export default function HeroLeft(): React.ReactElement {
       <RoundedButton
         color={theme.colors?.blue && theme.colors?.blue[6]}
         className={styles.button}
-        shouldanimate={true}
+        shouldAnimate={true}
         size="xl"
         variant="filled"
         onClick={() => {

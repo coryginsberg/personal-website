@@ -16,6 +16,7 @@ module.exports = {
     '^sections/(.*)$',
     '^pages/(.*)$',
     '^@styles/(.*)$',
+    '^@svg/(.*)$',
     '^@public/(.*)$',
   ],
   importOrderSeparation: true,

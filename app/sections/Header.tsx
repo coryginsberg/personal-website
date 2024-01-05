@@ -5,19 +5,29 @@
 
 'use client';
 
-import { Burger, Container, Group, Menu, rem } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import {
+  Burger,
+  Container,
+  Group,
+  Menu,
+  rem,
+  useComputedColorScheme,
+  useMantineColorScheme,
+} from '@mantine/core';
+import { useColorScheme, useDisclosure } from '@mantine/hooks';
 
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
+import { useEffect, useRef } from 'react';
 import { theme } from 'theme';
 
 import ColorModeToggle from 'components/ColorModeToggle';
 import RoundedButton from 'components/RoundedButton';
 
 import header from '@styles/header.module.css';
+
+import PersonalLogo from '@public/Personal_logo.svg';
 
 const links = [
   {
@@ -33,7 +43,11 @@ const links = [
 ];
 
 export default function Header(): React.ReactElement {
+  const computedColorScheme = useComputedColorScheme('dark', {
+    getInitialValueInEffect: true,
+  });
   const [opened, { toggle }] = useDisclosure(false);
+  const logoRef = useRef<SVGElement>(null);
 
   const items = links.map(link => (
     <Link
@@ -46,6 +60,18 @@ export default function Header(): React.ReactElement {
       {link.label}
     </Link>
   ));
+
+  useEffect(() => {
+    if (logoRef.current == null) {
+      return;
+    }
+    const g = logoRef.current.getElementsByClassName('colorToggle')[0];
+    if (computedColorScheme === 'dark') {
+      g.setAttribute('fill', 'white');
+    } else {
+      g.setAttribute('fill', 'black');
+    }
+  }, [logoRef.current, computedColorScheme]);
 
   return (
     <header className={header.root}>
@@ -63,13 +89,7 @@ export default function Header(): React.ReactElement {
             <Group gap={8} visibleFrom="xs">
               {items}
             </Group>
-            <Image
-              src="/Logo.svg"
-              alt="Personal Logo"
-              priority={true}
-              width={60}
-              height={60}
-            />
+            <PersonalLogo width={60} height={60} ref={logoRef} />
             <Group wrap="nowrap">
               <Link
                 href="mailto:cory.ginsberg1@gmail.com"

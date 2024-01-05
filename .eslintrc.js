@@ -4,19 +4,22 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'next',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
+    'plugin:@typescript-eslint/recommended-type-checked',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    project: true,
+    tsconfigRootDir: __dirname,
   },
-  plugins: ['react', 'import'],
+  plugins: ['react', 'import', '@svgr/plugin-jsx'],
   rules: {
     // turn on errors for missing imports
     'import/no-unresolved': 'error',
