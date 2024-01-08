@@ -7,7 +7,6 @@
 
 import { Grid, Text, Title } from '@mantine/core';
 
-import Image from 'next/image';
 import * as React from 'react';
 import { theme } from 'theme';
 
@@ -34,7 +33,7 @@ export default function HeroLeft(): React.ReactElement {
         Python
       </TextPill>
       <TextPill
-        color={theme.colors?.gray && theme.colors?.gray[6]}
+        color={theme.colors?.gray && theme.colors?.gray[4]}
         leftSection={<SwiftLogo />}>
         Swift
       </TextPill>

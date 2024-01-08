@@ -36,18 +36,19 @@
     }
   }
 
-  .heroRight {
+  & .heroRight {
     width: 50%;
     max-width: 50%;
     position: relative;
 
     .heroText {
-      border-radius: 12px;
       padding: 16px 24px;
       top: 400px;
       left: 12px;
       width: fit-content;
       position: absolute;
+      background-color: var(--mantine-color-default-border);
+      opacity: 1;
 
       .largeText {
         font-size: 42px;

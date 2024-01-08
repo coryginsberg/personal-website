@@ -67,9 +67,9 @@ export default function HeroRight(): React.ReactElement {
       <Paper
         ref={blurbRef}
         radius="lg"
-        shadow="md"
+        shadow="lg"
         color={theme.colors?.gray && theme.colors.gray[8]}
-        className={styles.heroText}>
+        classNames={{ root: styles.heroText }}>
         <Title>{calcYearsExperience()}+</Title>
         <Text>years experience</Text>
       </Paper>
