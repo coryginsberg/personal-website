@@ -50,11 +50,15 @@ export default function HeroLeft(): React.ReactElement {
         experience.
       </Text>
       <RoundedButton
-        color={theme.colors?.blue && theme.colors?.blue[6]}
+        gradient={{
+          from: theme.colors?.blue[8],
+          to: theme.colors?.blue[4],
+          deg: 15,
+        }}
         className={styles.button}
         shouldAnimate={true}
         size="xl"
-        variant="filled"
+        variant="gradient"
         onClick={() => {
           window.open('/Resume.pdf', '_target');
         }}>

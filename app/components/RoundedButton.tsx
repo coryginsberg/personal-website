@@ -10,6 +10,7 @@ import { Button, ButtonProps } from '@mantine/core';
 import { gsap } from 'gsap';
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
+import { theme } from 'theme';
 
 interface Props extends ButtonProps {
   children: string;
@@ -22,7 +23,7 @@ interface Props extends ButtonProps {
 }
 
 export default function RoundedButton(props: Props): React.ReactElement {
-  const { shouldAnimate, ...otherProps } = props;
+  const { shouldAnimate, ...buttonProps } = props;
 
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [zoom, setZoom] = useState<gsap.core.Tween | null>();
@@ -84,7 +85,7 @@ export default function RoundedButton(props: Props): React.ReactElement {
 
   return (
     <Button
-      {...otherProps}
+      {...buttonProps}
       ref={buttonRef}
       radius="xl"
       variant={props.variant ?? 'default'}
