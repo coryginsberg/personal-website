@@ -9,9 +9,9 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import * as React from 'react';
 import { useLayoutEffect, useRef } from 'react';
+import { theme } from 'theme';
 
-import styles from '@styles/hero.module.scss';
-import vars from '@styles/variables.module.scss';
+import styles from '@styles/hero.module.css';
 
 import headshot from '@public/headshot.png';
 
@@ -50,7 +50,7 @@ export default function Headshot(): React.ReactElement {
       <path
         // eslint-disable-next-line max-len
         d="M876.717,1651.73c-202.315,193.147 -523.384,190.229 -722.109,-8.657c-201.554,-201.714 -201.422,-529.118 0.294,-730.672c2.843,-2.84 -2.891,2.76 0,0l2175.51,-2175.31l1469.9,-8.394l-1345.7,1345.7l0.743,0.744l-1578.35,1576.87l-0.282,-0.283Z"
-        fill={vars.accentColor}
+        fill={theme.colors.blue[6]}
         ref={backgroundRef}
       />
       <path

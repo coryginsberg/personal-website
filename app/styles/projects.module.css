@@ -3,26 +3,24 @@
  * MIT License
  */
 
-@use './variables.module.scss' as var;
-
 .root {
   padding-top: 120px;
 
-  .projectsLayout {
+  & .projectsLayout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 24px;
-    padding: {
-      top: 24px;
-      bottom: 100px;
-    }
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 75px;
   }
+}
 
-  @media screen and (max-width: var.$tablet-breakpoint) {
+@media screen and (max-width: var(--mantine-breakpoint-md)) {
+  .root {
     padding-top: 48px;
 
-    .projectsLayout {
+    & .projectsLayout {
       grid-template-columns: repeat(1, 1fr);
     }
   }

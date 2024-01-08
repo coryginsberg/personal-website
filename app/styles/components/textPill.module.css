@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
+.section {
+  width: 30px;
+}
+
+.label {
+  text-transform: capitalize;
+  font-size: var(--mantine-font-size-lg);
+  padding-left: 8px;
+}
+
+.hoverCard {
+  max-width: 300px;
+}

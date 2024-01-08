@@ -12,7 +12,7 @@ import { theme } from 'theme';
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';
 
-import '@styles/globals.scss';
+import '@styles/globals.css';
 
 export const metadata = {
   title: 'Cory Ginsberg',
@@ -27,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="auto" />
       </head>
       <body>
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} defaultColorScheme="auto">
           <Header />
           <main>{children}</main>
           <Footer />

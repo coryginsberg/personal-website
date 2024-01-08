@@ -7,7 +7,7 @@
   "stylelint.validate": ["css", "scss", ".module.scss"],
   "stylelint.snippet": ["css", "scss", "less", "html"],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "cssVariables.lookupFiles": [
     "**/*.css",

@@ -3,27 +3,32 @@
  * MIT License
  */
 
+import { Badge, BadgeProps, Grid } from '@mantine/core';
+
 import * as React from 'react';
+import { forwardRef } from 'react';
 
-import styles from '@styles/components/textPill.module.scss';
+import styles from '@styles/components/textPill.module.css';
 
-type Props = {
-  backgroundColor: string;
-  textColor: string;
-  imageLeft: React.ReactNode;
+interface Props extends BadgeProps {
   children: string;
-};
-
-export default function TextPill(props: Props): React.ReactElement {
-  return (
-    <div
-      className={styles.root}
-      style={{
-        backgroundColor: props.backgroundColor,
-        color: props.textColor,
-      }}>
-      {props.imageLeft}
-      <span className={styles.text}>{props.children}</span>
-    </div>
-  );
 }
+
+export type Ref = HTMLDivElement;
+
+// Forward ref needed for HoverCard
+// @see https://mantine.dev/core/hover-card/#required-ref-prop
+const TextPill = forwardRef<Ref, Props>((props, ref) => (
+  <Grid.Col span="content" ref={ref}>
+    <Badge
+      {...props}
+      size="xl"
+      radius="md"
+      h={60}
+      classNames={{ section: styles.section, label: styles.label }}>
+      {props.children}
+    </Badge>
+  </Grid.Col>
+));
+
+export default TextPill;

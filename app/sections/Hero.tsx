@@ -3,18 +3,22 @@
  * MIT License
  */
 
+import { Container } from '@mantine/core';
+
 import * as React from 'react';
 
 import HeroLeft from 'sections/HeroLeft';
 import HeroRight from 'sections/HeroRight';
 
-import styles from '@styles/hero.module.scss';
+import styles from '@styles/hero.module.css';
 
 export default function Hero(): React.ReactElement {
   return (
-    <div className={styles.hero}>
-      <HeroLeft />
-      <HeroRight />
-    </div>
+    <Container fluid={true}>
+      <div className={styles.hero}>
+        <HeroLeft />
+        <HeroRight />
+      </div>
+    </Container>
   );
 }

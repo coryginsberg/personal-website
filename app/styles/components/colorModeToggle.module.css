@@ -1,0 +1,10 @@
+/**
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
+.icon {
+  margin-top: 2px;
+  width: rem(22px);
+  height: rem(22px);
+}

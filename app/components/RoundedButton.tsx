@@ -5,27 +5,30 @@
 
 'use client';
 
+import { Button, ButtonProps } from '@mantine/core';
+
 import { gsap } from 'gsap';
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import styles from '@styles/components/roundedButton.module.scss';
-
-type Props = {
+interface Props extends ButtonProps {
   children: string;
   color?: string;
   backgroundColor?: string;
   className?: string;
+  variant?: string;
   shouldAnimate?: boolean;
   onClick?: () => void;
-};
+}
 
 export default function RoundedButton(props: Props): React.ReactElement {
+  const { shouldAnimate, ...buttonProps } = props;
+
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [zoom, setZoom] = useState<gsap.core.Tween | null>();
   const [wiggle, setWiggle] = useState<gsap.core.Timeline | null>();
   useLayoutEffect(() => {
-    if (!props.shouldAnimate || !buttonRef.current) {
+    if (!shouldAnimate || !buttonRef.current) {
       return () => null;
     }
     const ctx = gsap.context(() => {
@@ -77,15 +80,14 @@ export default function RoundedButton(props: Props): React.ReactElement {
     });
 
     return () => ctx.revert();
-  }, [props.shouldAnimate]);
+  }, [shouldAnimate]);
 
   return (
-    <button
+    <Button
+      {...buttonProps}
       ref={buttonRef}
-      className={props.className ?? styles.button}
-      style={{
-        color: props.color,
-      }}
+      radius="xl"
+      variant={props.variant ?? 'default'}
       onMouseEnter={() => {
         zoom?.play();
         wiggle?.restart();
@@ -95,6 +97,6 @@ export default function RoundedButton(props: Props): React.ReactElement {
       }}
       onClick={props.onClick}>
       {props.children}
-    </button>
+    </Button>
   );
 }

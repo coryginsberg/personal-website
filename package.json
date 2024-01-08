@@ -7,13 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "svgr": "svgr --typescript --no-index --ignore-existing --out-dir public/svg/components -- public/svg"
   },
   "dependencies": {
-    "@mantine/core": "^7.3.2",
-    "@mantine/hooks": "^7.3.2",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@mantine/colors-generator": "^7.4.0",
+    "@mantine/core": "^7.4.0",
+    "@mantine/hooks": "^7.4.0",
+    "@tabler/icons-react": "^2.45.0",
+    "@typescript-eslint/parser": "^6.18.1",
     "@vercel/speed-insights": "^1.0.2",
+    "chroma-js": "^2.4.2",
+    "clsx": "^2.1.0",
     "css-loader": "^6.8.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "gsap": "^3.12.4",
@@ -21,16 +26,17 @@
     "next": "14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
-    "sass": "^1.69.7",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.1",
+    "temporal-polyfill": "^0.2.0"
   },
   "devDependencies": {
     "@serverless-guru/prettier-plugin-import-order": "^0.4.2",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.10.7",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "14.0.4",
@@ -52,8 +58,7 @@
     "prettier": "^2.8.8",
     "sass": "^1.69.7",
     "stylelint": "^16.1.0",
-    "stylelint-config-recommended-scss": "^14.0.0",
-    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.3.3"
   },
   "lint-staged": {
