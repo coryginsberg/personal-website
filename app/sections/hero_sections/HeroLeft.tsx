@@ -5,62 +5,39 @@
 
 'use client';
 
-import { Text, Title } from '@mantine/core';
+import { Grid, HoverCard, Text, Title } from '@mantine/core';
 
-import Image from 'next/image';
+import { Pills } from 'helpers/TextPillHelper';
 import * as React from 'react';
+import { theme } from 'theme';
 
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
 
-import styles from '@styles/hero.module.scss';
-import vars from '@styles/variables.module.scss';
-
-import pythonLogo from '@public/python_logo.svg';
-import reactLogo from '@public/react_logo.png';
-import swiftLogo from '@public/swift_logo.svg';
-import tsLogo from '@public/ts_logo.png';
+import styles from '@styles/hero.module.css';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (
-    <div className={styles.pillSection}>
-      <div className={styles.pillRow}>
-        <TextPill
-          backgroundColor={vars.reactBackground}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={reactLogo} alt="React Logo" width={38} height={30} />
-          }>
-          React
-        </TextPill>
-        <TextPill
-          backgroundColor={vars.tsBackground}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
-          }>
-          TypeScript
-        </TextPill>
-      </div>
-      <div className={styles.pillRow}>
-        <TextPill
-          backgroundColor={vars.accentColor}
-          textColor={vars.textColorLight}
-          imageLeft={
-            <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
-          }>
-          Python
-        </TextPill>
-        <TextPill
-          backgroundColor={vars.gray}
-          textColor={vars.textColorDark}
-          imageLeft={
-            <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
-          }>
-          Swift
-        </TextPill>
-      </div>
-    </div>
+    <Grid className={styles.pillSection} w={'50%'}>
+      {Pills.map((pill, idx) => (
+        <HoverCard
+          key={idx}
+          shadow="md"
+          withArrow={true}
+          offset={2}
+          withinPortal={false}
+          width={'auto'}>
+          <HoverCard.Target>
+            <TextPill color={pill.color} leftSection={pill.icon}>
+              {pill.text}
+            </TextPill>
+          </HoverCard.Target>
+          <HoverCard.Dropdown style={{ maxWidth: '300px' }}>
+            <Text size="md">{pill.blurb}</Text>
+          </HoverCard.Dropdown>
+        </HoverCard>
+      ))}
+    </Grid>
   );
 
   return (
@@ -73,10 +50,15 @@ export default function HeroLeft(): React.ReactElement {
         experience.
       </Text>
       <RoundedButton
-        backgroundColor={vars.accentColor}
-        color={vars.textColorLight}
+        gradient={{
+          from: theme.colors?.blue[8],
+          to: theme.colors?.blue[4],
+          deg: 15,
+        }}
         className={styles.button}
         shouldAnimate={true}
+        size="xl"
+        variant="gradient"
         onClick={() => {
           window.open('/Resume.pdf', '_target');
         }}>

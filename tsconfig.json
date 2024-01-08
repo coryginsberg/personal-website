@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,17 +25,38 @@
     ],
     "baseUrl": "app",
     "paths": {
-      "components/*": ["components/*"],
-      "sections/*": ["sections/*", "sections/hero_sections/*"],
-      "@styles/*": ["styles/*"],
+      "components/*": [
+        "components/*",
+      ],
+      "sections/*": [
+        "sections/*",
+        "sections/hero_sections/*",
+      ],
+      "@styles/*": [
+        "styles/*",
+      ],
       "@public/*": [
         "../public/*",
-        "../public/languages/*",
-        "../public/project_previews/*"
+        "../public/project_previews/*",
       ],
-      "react": ["./node_modules/@types/react"]
+      "@svg/*": [
+        "../public/svg/components/*",
+        "../public/svg/components/language/*",
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "public/svg/components/PersonalLogo.tsx",
+    "cmd/SVGToTypescriptTemplate.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
