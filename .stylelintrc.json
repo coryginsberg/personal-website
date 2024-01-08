@@ -1,9 +1,8 @@
 {
-  "extends": "stylelint-config-standard-scss",
+  "extends": "stylelint-config-standard",
   "rules": {
     "custom-property-pattern": null,
     "selector-class-pattern": null,
-    "scss/no-duplicate-mixins": null,
     "declaration-empty-line-before": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "alpha-value-notation": null,
@@ -14,9 +13,8 @@
     "selector-not-notation": null,
     "no-descending-specificity": null,
     "comment-empty-line-before": null,
-    "scss/at-mixin-pattern": null,
-    "scss/at-rule-no-unknown": null,
     "value-keyword-case": null,
+    "media-query-no-invalid": null,
     "media-feature-range-notation": null,
     "selector-pseudo-class-no-unknown": [
       true,

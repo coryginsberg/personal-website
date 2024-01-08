@@ -12,7 +12,7 @@ import { theme } from 'theme';
 import Footer from 'sections/Footer';
 import Header from 'sections/Header';
 
-import '@styles/globals.scss';
+import '@styles/globals.css';
 
 export const metadata = {
   title: 'Cory Ginsberg',

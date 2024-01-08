@@ -3,30 +3,24 @@
  * MIT License
  */
 
-@use './variables.module.scss' as var;
-
 .root {
-  padding: {
-    top: 40px;
-    bottom: 80px;
-  }
+  padding-top: 40px;
+  padding-bottom: 80px;
   text-align: center;
 
-  .copyright {
-    @include var.theme('color', var.$copyright-color);
-
+  & .copyright {
+    color: var(--mantine-color-gray-5);
     font-size: 24px;
     font-weight: normal;
     padding-bottom: 20px;
   }
 
-  .openSource {
-    @include var.theme('color', var.$opensource-color);
-
+  & .openSource {
+    color: var(--mantine-color-gray-4);
     font-size: 16px;
     font-weight: normal;
 
-    .link {
+    & .link {
       text-decoration: underline;
 
       &:hover {
@@ -34,8 +28,10 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: var.$mobile-breakpoint) {
+@media screen and (max-width: var(--mantine-breakpoint-sm)) {
+  .root {
     padding-top: 0;
   }
 }

@@ -51,8 +51,8 @@ export default function HeroLeft(): React.ReactElement {
       </Text>
       <RoundedButton
         gradient={{
-          from: theme.colors?.blue[8],
-          to: theme.colors?.blue[4],
+          from: theme.colors.blue[8],
+          to: theme.colors.blue[4],
           deg: 15,
         }}
         className={styles.button}

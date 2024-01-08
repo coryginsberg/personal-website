@@ -11,13 +11,6 @@
     color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-dark-0));
     font-size: var(--mantine-font-size-lg);
     padding-right: 8px;
-
-    @mixin hover {
-      color: light-dark(
-        var(--mantine-color-gray-6),
-        var(--mantine-color-dark-3)
-      );
-    }
   }
 
   & .logo {

@@ -49,7 +49,7 @@ export const Pills: PillInfo[] = [
     blurb: '3+ years experience',
   },
   {
-    color: theme.colors?.gray && theme.colors?.gray[4],
+    color: theme.colors.gray[4],
     text: 'Swift',
     icon: <SwiftLogo />,
     blurb: (

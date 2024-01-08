@@ -68,7 +68,7 @@ export default function HeroRight(): React.ReactElement {
         ref={blurbRef}
         radius="lg"
         shadow="lg"
-        color={theme.colors?.gray && theme.colors.gray[8]}
+        color={theme.colors.gray[8]}
         classNames={{ root: styles.heroText }}>
         <Title>{calcYearsExperience()}+</Title>
         <Text>years experience</Text>
