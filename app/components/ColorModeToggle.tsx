@@ -5,12 +5,12 @@
 
 import {
   ActionIcon,
+  Box,
   useComputedColorScheme,
   useMantineColorScheme,
 } from '@mantine/core';
 
 import { IconMoon, IconSun } from '@tabler/icons-react';
-import cx from 'clsx';
 import * as React from 'react';
 import { theme } from 'theme';
 
@@ -32,8 +32,12 @@ export default function ColorModeToggle(): React.ReactElement {
       radius="xl"
       color={theme.white}
       aria-label="Toggle color scheme">
-      <IconSun className={cx(styles.icon, styles.light)} />
-      <IconMoon className={cx(styles.icon, styles.dark)} />
+      <Box lightHidden={true}>
+        <IconSun className={styles.icon} />
+      </Box>
+      <Box darkHidden={true}>
+        <IconMoon className={styles.icon} />
+      </Box>
     </ActionIcon>
   );
 }

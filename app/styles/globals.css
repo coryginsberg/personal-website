@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) 2023 Cory Ginsberg
+ * MIT License
+ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--mantine-color-default);
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: var(--mantine-breakpoint-sm)) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -5,12 +5,15 @@
 
 'use client';
 
+import { Anchor, useStyles } from '@mantine/core';
+
 import gsap, { Power4 } from 'gsap';
 import Image, { StaticImageData } from 'next/image';
 import * as React from 'react';
 import { useLayoutEffect, useRef } from 'react';
+import { theme } from 'theme';
 
-import styles from '@styles/components/projectCard.module.scss';
+import styles from '@styles/components/projectCard.module.css';
 
 type Props = {
   title: string;
@@ -60,10 +63,14 @@ export default function ProjectCard(props: Props): React.ReactElement {
 
   return (
     <div className={styles.root} ref={rootRef}>
-      <a
+      <Anchor
         href={props.href?.toString()}
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+        className={styles.link}
+        underline="never"
+        size="lg"
+        style={{ color: 'var(--mantine-color-text)' }}>
         <Image
           className={styles.image}
           alt={`Preview Image for ${props.title}`}
@@ -77,7 +84,7 @@ export default function ProjectCard(props: Props): React.ReactElement {
           onMouseLeave={onMouseLeaveHandler}
         />
         <div className={styles.text}>{props.title}</div>
-      </a>
+      </Anchor>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import * as React from 'react';
 
 import ProjectCard from 'components/ProjectCard';
 
-import styles from '@styles/projects.module.scss';
+import styles from '@styles/projects.module.css';
 
 import igbPreview from '@public/igb_preview.png';
 import mfbPreview from '@public/mfb_preview.png';
