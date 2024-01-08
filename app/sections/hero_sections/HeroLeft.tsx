@@ -5,8 +5,9 @@
 
 'use client';
 
-import { Grid, Text, Title } from '@mantine/core';
+import { Grid, HoverCard, Text, Title } from '@mantine/core';
 
+import { Pills } from 'helpers/TextPillHelper';
 import * as React from 'react';
 import { theme } from 'theme';
 
@@ -15,28 +16,27 @@ import TextPill from 'components/TextPill';
 
 import styles from '@styles/hero.module.css';
 
-import ReactLogo from '@public/language/React_logo.svg';
-import TypeScriptLogo from '@public/language/Typescript_logo.svg';
-import PythonLogo from '@public/language/python_logo.svg';
-import SwiftLogo from '@public/language/swift_logo.svg';
-
 export default function HeroLeft(): React.ReactElement {
   const pills = (
     <Grid className={styles.pillSection} w={'50%'}>
-      <TextPill color="#2a2c32" leftSection={<ReactLogo />}>
-        React
-      </TextPill>
-      <TextPill color="#235a97" leftSection={<TypeScriptLogo />}>
-        TypeScript
-      </TextPill>
-      <TextPill color={theme.primaryColor} leftSection={<PythonLogo />}>
-        Python
-      </TextPill>
-      <TextPill
-        color={theme.colors?.gray && theme.colors?.gray[4]}
-        leftSection={<SwiftLogo />}>
-        Swift
-      </TextPill>
+      {Pills.map((pill, idx) => (
+        <HoverCard
+          key={idx}
+          shadow="md"
+          withArrow={true}
+          offset={2}
+          withinPortal={false}
+          width={'auto'}>
+          <HoverCard.Target>
+            <TextPill color={pill.color} leftSection={pill.icon}>
+              {pill.text}
+            </TextPill>
+          </HoverCard.Target>
+          <HoverCard.Dropdown style={{ maxWidth: '300px' }}>
+            <Text size="md">{pill.blurb}</Text>
+          </HoverCard.Dropdown>
+        </HoverCard>
+      ))}
     </Grid>
   );
 

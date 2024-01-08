@@ -10,7 +10,6 @@ import { Button, ButtonProps } from '@mantine/core';
 import { gsap } from 'gsap';
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
-import { theme } from 'theme';
 
 interface Props extends ButtonProps {
   children: string;

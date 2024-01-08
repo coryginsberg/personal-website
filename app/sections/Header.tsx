@@ -12,9 +12,8 @@ import {
   Menu,
   rem,
   useComputedColorScheme,
-  useMantineColorScheme,
 } from '@mantine/core';
-import { useColorScheme, useDisclosure } from '@mantine/hooks';
+import { useDisclosure } from '@mantine/hooks';
 
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
 import Link from 'next/link';
