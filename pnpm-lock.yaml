@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@mantine/colors-generator':
-    specifier: ^7.4.0
-    version: 7.4.0(chroma-js@2.4.2)
+    specifier: ^7.4.2
+    version: 7.4.2(chroma-js@2.4.2)
   '@mantine/core':
     specifier: ^7.4.0
     version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
@@ -1787,8 +1787,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@mantine/colors-generator@7.4.0(chroma-js@2.4.2):
-    resolution: {integrity: sha512-vX6ZVNXl2Q1qVxdMTrKD5/nFIk53WxMxE28tG5dUg93j7wr7RP7N1ETbJS3Mrj9P+Siq67i0MC+YwskjYkfF9A==}
+  /@mantine/colors-generator@7.4.2(chroma-js@2.4.2):
+    resolution: {integrity: sha512-qjSAj8DM4LmoBQRlNHLEOO3UV/NbsSnj3cuP2IuVsr36gkXnvcdZzEUJrhY4ZrfN+Ogm7vNY7Didrk+HR8Jdbw==}
     peerDependencies:
       chroma-js: ^2.4.2
     dependencies:
