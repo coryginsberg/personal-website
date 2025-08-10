@@ -8,6 +8,7 @@
 import { Grid, HoverCard, Text, Title } from '@mantine/core';
 
 import { Pills } from 'helpers/TextPillHelper';
+import { calcYearsExperience } from 'helpers/calculations';
 import * as React from 'react';
 import { theme } from 'theme';
 
@@ -46,8 +47,8 @@ export default function HeroLeft(): React.ReactElement<any> {
         Hi, I&apos;m <br /> <b>Cory Ginsberg</b>.
       </Title>
       <Text className={styles.blurb} mt="md" fz="lg">
-        I&apos;m a professional software developer with more than 5 years of
-        experience.
+        I&apos;m a professional software developer with more than{' '}
+        {calcYearsExperience()} years of experience.
       </Text>
       <RoundedButton
         gradient={{

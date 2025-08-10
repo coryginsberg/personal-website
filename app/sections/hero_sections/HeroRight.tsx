@@ -8,9 +8,9 @@
 import { Paper, Text, Title } from '@mantine/core';
 
 import gsap from 'gsap';
+import { calcYearsExperience } from 'helpers/calculations';
 import * as React from 'react';
 import { useLayoutEffect, useRef } from 'react';
-import { Temporal } from 'temporal-polyfill';
 import { theme } from 'theme';
 
 import Headshot from 'components/Headshot';
@@ -43,24 +43,6 @@ export default function HeroRight(): React.ReactElement<any> {
 
     return () => ctx.revert();
   }, []);
-
-  /** WARNING: THIS IS EXPERIMENTAL CODE!!!
-   * This is using a polyfill of the new Temporal Date/Time API for JS.
-   * As of this writing, the proposal is in stage 3 and should hit stage 4
-   * sometime in the next few months.
-   * @see Proposal: https://github.com/tc39/proposal-temporal
-   * @see Polyfill: https://www.npmjs.com/package/temporal-polyfill
-   * @see Documentation: https://tc39.es/proposal-temporal/docs/index.html
-   */
-  const calcYearsExperience = (): number => {
-    const currentDate = Temporal.Now.plainDateISO();
-    const startDate = Temporal.PlainDate.from({
-      year: 2018,
-      month: 7,
-      day: 1,
-    });
-    return currentDate.since(startDate, { smallestUnit: 'year' }).years;
-  };
 
   return (
     <div className={styles.heroRight}>
