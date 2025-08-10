@@ -16,7 +16,7 @@ import TextPill from 'components/TextPill';
 
 import styles from '@styles/hero.module.css';
 
-export default function HeroLeft(): React.ReactElement {
+export default function HeroLeft(): React.ReactElement<any> {
   const pills = (
     <Grid className={styles.pillSection} w={'50%'}>
       {Pills.map((pill, idx) => (

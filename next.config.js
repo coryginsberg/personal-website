@@ -18,6 +18,14 @@ module.exports = {
       },
     },
   },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
   webpack: (config) => {
     config.plugins = config.plugins || [];
     config.optimization.providedExports = true;

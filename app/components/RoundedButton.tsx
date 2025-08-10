@@ -21,7 +21,7 @@ interface Props extends ButtonProps {
   onClick?: () => void;
 }
 
-export default function RoundedButton(props: Props): React.ReactElement {
+export default function RoundedButton(props: Props): React.ReactElement<any> {
   const { shouldAnimate, ...buttonProps } = props;
 
   const buttonRef = useRef<HTMLButtonElement>(null);

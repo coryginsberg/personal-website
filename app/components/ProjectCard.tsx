@@ -21,10 +21,10 @@ type Props = {
   href: string;
 };
 
-export default function ProjectCard(props: Props): React.ReactElement {
+export default function ProjectCard(props: Props): React.ReactElement<any> {
   const rootRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLImageElement>(null);
-  const hoverTween = useRef<gsap.core.Tween>();
+  const hoverTween = useRef<gsap.core.Tween>(undefined);
 
   useLayoutEffect(() => {
     hoverTween.current = gsap.to(cardRef.current, {

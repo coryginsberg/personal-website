@@ -15,10 +15,10 @@ import styles from '@styles/hero.module.css';
 
 import headshot from '@public/headshot.png';
 
-export default function Headshot(): React.ReactElement {
+export default function Headshot(): React.ReactElement<any> {
   const backgroundRef = useRef<SVGPathElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const hoverTween = useRef<gsap.core.Tween>();
+  const hoverTween = useRef<gsap.core.Tween>(undefined);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {

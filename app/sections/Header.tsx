@@ -41,7 +41,7 @@ const links = [
   },
 ];
 
-export default function Header(): React.ReactElement {
+export default function Header(): React.ReactElement<any> {
   const computedColorScheme = useComputedColorScheme('dark', {
     getInitialValueInEffect: true,
   });

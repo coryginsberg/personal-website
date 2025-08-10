@@ -12,7 +12,7 @@ import HeroRight from 'sections/HeroRight';
 
 import styles from '@styles/hero.module.css';
 
-export default function Hero(): React.ReactElement {
+export default function Hero(): React.ReactElement<any> {
   return (
     <Container fluid={true}>
       <div className={styles.hero}>

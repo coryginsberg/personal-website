@@ -7,7 +7,7 @@ import * as React from 'react';
 
 import styles from '@styles/footer.module.css';
 
-export default function Footer(): React.ReactElement {
+export default function Footer(): React.ReactElement<any> {
   return (
     <div className={styles.root}>
       <h5 className={styles.copyright}>Made by Cory Ginsberg. MIT License</h5>

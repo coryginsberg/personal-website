@@ -13,7 +13,7 @@ import igbPreview from '@public/igb_preview.png';
 import mfbPreview from '@public/mfb_preview.png';
 import rtwPreview from '@public/rtw_preview.png';
 
-export function Projects(): React.ReactElement {
+export function Projects(): React.ReactElement<any> {
   return (
     <div className={styles.root}>
       <h1>Project Spotlight</h1>

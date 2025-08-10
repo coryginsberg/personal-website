@@ -16,7 +16,7 @@ import { theme } from 'theme';
 
 import styles from '@styles/components/colorModeToggle.module.css';
 
-export default function ColorModeToggle(): React.ReactElement {
+export default function ColorModeToggle(): React.ReactElement<any> {
   const { setColorScheme } = useMantineColorScheme({ keepTransitions: true });
   const computedColorScheme = useComputedColorScheme('light', {
     getInitialValueInEffect: true,

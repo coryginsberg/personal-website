@@ -17,9 +17,9 @@ import Headshot from 'components/Headshot';
 
 import styles from '@styles/hero.module.css';
 
-export default function HeroRight(): React.ReactElement {
+export default function HeroRight(): React.ReactElement<any> {
   const blurbRef = useRef<HTMLImageElement>(null);
-  const hoverTween = useRef<gsap.core.Tween>();
+  const hoverTween = useRef<gsap.core.Tween>(undefined);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
