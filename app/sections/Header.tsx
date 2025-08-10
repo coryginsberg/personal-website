@@ -16,7 +16,6 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
-import useIsClient from 'helpers/hooks/useIsClient';
 import Link from 'next/link';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
