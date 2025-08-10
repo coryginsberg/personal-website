@@ -39,43 +39,57 @@ export default function RoundedButton(props: Props): React.ReactElement<any> {
             ease: 'power3.inOut',
             duration: 0.05,
           })
+          .repeatDelay(15)
           .to(buttonRef.current, {
-            rotation: 30,
-            duration: 0.05,
+            scale: 1.05,
+            duration: 0.1,
+          })
+          .delay(1)
+          .to(buttonRef.current, {
+            rotation: 10,
+            duration: 0.075,
           })
           .to(buttonRef.current, {
             rotation: 0,
-            duration: 0.05,
+            duration: 0.075,
           })
           .to(buttonRef.current, {
-            rotation: -30,
-            duration: 0.05,
-          })
-          .to(buttonRef.current, {
-            rotation: 0,
-            duration: 0.05,
-          })
-          .to(buttonRef.current, {
-            rotation: 30,
-            duration: 0.05,
+            rotation: -10,
+            duration: 0.065,
           })
           .to(buttonRef.current, {
             rotation: 0,
-            duration: 0.05,
+            duration: 0.065,
           })
           .to(buttonRef.current, {
-            rotation: -30,
-            duration: 0.05,
+            rotation: 10,
+            duration: 0.055,
           })
           .to(buttonRef.current, {
             rotation: 0,
-            duration: 0.05,
+            duration: 0.055,
           })
-          .repeatDelay(8),
+          .to(buttonRef.current, {
+            rotation: -10,
+            duration: 0.075,
+          })
+          .to(buttonRef.current, {
+            rotation: 0,
+            duration: 0.075,
+          })
+          .delay(1)
+          .to(buttonRef.current, {
+            scale: 1,
+            duration: 0.1,
+          }),
       );
 
       setZoom(
-        gsap.to(buttonRef.current, { scale: 1.1, duration: 0.1, paused: true }),
+        gsap.to(buttonRef.current, {
+          scale: 1.1,
+          duration: 0.25,
+          paused: true,
+        }),
       );
     });
 
@@ -90,10 +104,11 @@ export default function RoundedButton(props: Props): React.ReactElement<any> {
       variant={props.variant ?? 'default'}
       onMouseEnter={() => {
         zoom?.play();
-        wiggle?.restart();
+        wiggle?.pause();
       }}
       onMouseLeave={() => {
-        zoom?.pause(0);
+        zoom?.reverse();
+        wiggle?.resume();
       }}
       onClick={props.onClick}>
       {props.children}
