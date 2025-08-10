@@ -16,6 +16,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
+import useIsClient from 'helpers/hooks/useIsClient';
 import Link from 'next/link';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
@@ -65,6 +66,9 @@ export default function Header(): React.ReactElement<any> {
       return;
     }
     const g = logoRef.current.getElementsByClassName('colorToggle')[0];
+    if (g == undefined) {
+      return;
+    }
     if (computedColorScheme === 'dark') {
       g.setAttribute('fill', 'white');
     } else {
