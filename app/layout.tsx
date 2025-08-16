@@ -28,6 +28,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <ColorSchemeScript defaultColorScheme="auto" />
+        <title>{metadata.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <link rel="icon" href="../favicon.ico" />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
       </head>
       <body>
         <MantineProvider theme={theme} defaultColorScheme="auto">

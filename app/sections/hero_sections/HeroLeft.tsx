@@ -50,7 +50,7 @@ export default function HeroLeft(): React.ReactElement<any> {
         I&apos;m a professional software developer with more than{' '}
         {calcYearsExperience()} years of experience.
       </Text>
-      <RoundedButton
+      {/* <RoundedButton
         gradient={{
           from: theme.colors.blue[8],
           to: theme.colors.blue[4],
@@ -64,7 +64,7 @@ export default function HeroLeft(): React.ReactElement<any> {
           window.open('/Resume.pdf', '_target');
         }}>
         Check out my resume
-      </RoundedButton>
+      </RoundedButton> */}
       {pills}
     </div>
   );
