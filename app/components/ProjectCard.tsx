@@ -19,6 +19,7 @@ type Props = {
   title: string;
   src: StaticImageData;
   href: string;
+  description: string;
 };
 
 export default function ProjectCard(props: Props): React.ReactElement<any> {
@@ -35,17 +36,26 @@ export default function ProjectCard(props: Props): React.ReactElement<any> {
   }, []);
 
   const mouseMoveEvent = (e: MouseEvent) => {
-    const xPos =
-      e.clientX / (cardRef.current?.getBoundingClientRect().width ?? 1);
-    const yPos =
-      e.clientY / (cardRef.current?.getBoundingClientRect().height ?? 1);
-    hoverTween.current = gsap
-      .to(cardRef.current, {
-        translateX: -xPos * 20,
-        translateY: -yPos * 20,
-        scale: 1.1,
-      })
-      .play();
+    if (!cardRef.current || !rootRef.current) {
+      return;
+    }
+    const rect = cardRef.current.getBoundingClientRect();
+    const rootRect = rootRef.current.getBoundingClientRect();
+    const xPos = e.clientX - (rect.left + rect.width / 2);
+    const yPos = e.clientY - (rect.top + rect.height / 2);
+    const xRatio = xPos / (rect.width / 2);
+    const yRatio = yPos / (rect.height / 2);
+    const maxTranslate = 10; // max translation in px
+    const maxScale = 1.03; // max scale
+
+    hoverTween.current?.kill();
+    hoverTween.current = gsap.to(cardRef.current, {
+      translateX: xRatio * maxTranslate,
+      translateY: yRatio * maxTranslate,
+      scale: maxScale,
+      duration: 0.3,
+      ease: Power4.easeOut,
+    });
   };
 
   const onMouseEnterHandler = () => {
@@ -83,7 +93,8 @@ export default function ProjectCard(props: Props): React.ReactElement<any> {
           onMouseEnter={onMouseEnterHandler}
           onMouseLeave={onMouseLeaveHandler}
         />
-        <div className={styles.text}>{props.title}</div>
+        <h3 className={styles.text}>{props.title}</h3>
+        <p>{props.description}</p>
       </Anchor>
     </div>
   );
