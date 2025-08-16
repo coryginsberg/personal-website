@@ -40,7 +40,6 @@ export default function ProjectCard(props: Props): React.ReactElement<any> {
       return;
     }
     const rect = cardRef.current.getBoundingClientRect();
-    const rootRect = rootRef.current.getBoundingClientRect();
     const xPos = e.clientX - (rect.left + rect.width / 2);
     const yPos = e.clientY - (rect.top + rect.height / 2);
     const xRatio = xPos / (rect.width / 2);

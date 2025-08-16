@@ -7,20 +7,18 @@
 
 import { Grid, HoverCard, Text, Title } from '@mantine/core';
 
-import { Pills } from 'helpers/TextPillHelper';
+import { Pills as PillsInfo } from 'helpers/PillTextHelper';
 import { calcYearsExperience } from 'helpers/calculations';
 import * as React from 'react';
-import { theme } from 'theme';
 
-import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
 
 import styles from '@styles/hero.module.css';
 
 export default function HeroLeft(): React.ReactElement<any> {
-  const pills = (
-    <Grid className={styles.pillSection} w={'50%'}>
-      {Pills.map((pill, idx) => (
+  const PillComponents = (
+    <Grid className={styles.pillSection} w={'70%'}>
+      {PillsInfo.map((pill, idx) => (
         <HoverCard
           key={idx}
           shadow="md"
@@ -50,22 +48,7 @@ export default function HeroLeft(): React.ReactElement<any> {
         I&apos;m a professional software developer with more than{' '}
         {calcYearsExperience()} years of experience.
       </Text>
-      {/* <RoundedButton
-        gradient={{
-          from: theme.colors.blue[8],
-          to: theme.colors.blue[4],
-          deg: 15,
-        }}
-        className={styles.button}
-        shouldAnimate={true}
-        size="xl"
-        variant="gradient"
-        onClick={() => {
-          window.open('/Resume.pdf', '_target');
-        }}>
-        Check out my resume
-      </RoundedButton> */}
-      {pills}
+      {PillComponents}
     </div>
   );
 }

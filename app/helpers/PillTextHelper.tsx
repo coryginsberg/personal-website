@@ -8,8 +8,12 @@ import { Anchor, Text } from '@mantine/core';
 import React from 'react';
 import { theme } from 'theme';
 
+import { calcYearsExperience } from './calculations';
+
 import ReactLogo from '@public/language/React_logo.svg';
 import TypeScriptLogo from '@public/language/Typescript_logo.svg';
+import GraphQLLogo from '@public/language/graphql_logo.svg';
+import HackLogo from '@public/language/hack_logo.svg';
 import PythonLogo from '@public/language/python_logo.svg';
 import SwiftLogo from '@public/language/swift_logo.svg';
 
@@ -25,8 +29,12 @@ export const Pills: PillInfo[] = [
     color: '#2a2c32',
     text: 'React',
     icon: <ReactLogo />,
-    blurb:
-      "5+ years experience. Used in nearly every project I've been on at Meta.",
+    blurb: (
+      <Text>
+        {calcYearsExperience()}+ years experience. Used in nearly every project
+        I've been on at Meta.
+      </Text>
+    ),
   },
   {
     color: '#235a97',
@@ -34,7 +42,8 @@ export const Pills: PillInfo[] = [
     icon: <TypeScriptLogo />,
     blurb: (
       <Text>
-        5+ years experience. Used a combination of TypeScript and{' '}
+        {calcYearsExperience()}+ years experience. Used a combination of
+        TypeScript and{' '}
         <Anchor href="https://flow.org/" target="_blank">
           Flow
         </Anchor>{' '}
@@ -46,15 +55,21 @@ export const Pills: PillInfo[] = [
     color: theme.primaryColor,
     text: 'Python',
     icon: <PythonLogo />,
-    blurb: '3+ years experience',
+    blurb: (
+      <Text>
+        {calcYearsExperience() - 3}+ years experience. Used on several internal
+        projects at Meta, along with personal scripts for my own use.
+      </Text>
+    ),
   },
   {
-    color: theme.colors.gray[4],
+    color: '#EF5139',
     text: 'Swift',
     icon: <SwiftLogo />,
     blurb: (
       <Text>
-        4+ years experience. Mostly personal projects. Currently working on{' '}
+        {calcYearsExperience() - 2}+ years experience. Mostly personal projects.
+        Currently working on{' '}
         <Anchor
           href="https://github.com/coryginsberg/Hermes-for-Hacker-News"
           target="_blank">
@@ -65,6 +80,29 @@ export const Pills: PillInfo[] = [
           HackerNews
         </Anchor>
         .
+      </Text>
+    ),
+  },
+  {
+    color: '#E10098',
+    text: 'GraphQL',
+    icon: <GraphQLLogo />,
+    blurb: (
+      <Text>
+        {calcYearsExperience() - 4}+ years experience. Used on various Meta
+        projects, as well as personal projects.
+      </Text>
+    ),
+  },
+  {
+    color: theme.colors.gray[6],
+    text: 'Hack/PHP',
+    icon: <HackLogo />,
+    blurb: (
+      <Text>
+        {calcYearsExperience()}+ years experience. Hack is a dialect of PHP
+        created by Meta. I've used it on nearly every internal Meta project I've
+        been on.
       </Text>
     ),
   },
