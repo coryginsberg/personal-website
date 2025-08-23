@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (min-width: var(--mantine-breakpoint-md) + 1) {
+@media screen and (min-width: calc($mantine-breakpoint-md + 1)) {
   .root {
     .link {
       padding-top: 50px;
@@ -27,9 +27,19 @@
   }
 }
 
-@media screen and (max-width: var(--mantine-breakpoint-md)) {
+@media screen and (max-width: $mantine-breakpoint-md) {
   .root {
     padding-top: 24px;
     justify-self: center;
+  }
+}
+
+@media screen and (max-width: $mantine-breakpoint-sm) {
+  .root {
+    padding-top: 12px;
+
+    .link {
+      padding-top: 20px;
+    }
   }
 }

@@ -17,3 +17,18 @@
 .hoverCard {
   max-width: 300px;
 }
+
+@media screen and (max-width: $mantine-breakpoint-sm) {
+  .section {
+    width: 24px;
+  }
+
+  .label {
+    font-size: var(--mantine-font-size-md);
+    padding-left: 6px;
+  }
+
+  .hoverCard {
+    max-width: 200px;
+  }
+}

@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: var(--mantine-breakpoint-sm)) {
+@media screen and (max-width: $mantine-breakpoint-sm) {
   .root {
     padding-top: 0;
   }
