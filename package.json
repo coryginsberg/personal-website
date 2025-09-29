@@ -11,7 +11,7 @@
     "svgr": "svgr --typescript --no-index --ignore-existing --out-dir public/svg/components -- public/svg"
   },
   "dependencies": {
-    "@mantine/colors-generator": "^8.2.4",
+    "@mantine/colors-generator": "^8.3.2",
     "@mantine/core": "^8.2.4",
     "@mantine/hooks": "^8.2.4",
     "@mantine/next": "^6.0.22",
